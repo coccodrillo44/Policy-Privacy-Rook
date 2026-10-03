@@ -1,0 +1,317 @@
+================================================================================
+                    INFORMATIVA SUL TRATTAMENTO DEI DATI PERSONALI
+                                   (PRIVACY POLICY)
+                                      "CosaFare"
+================================================================================
+
+Ultimo aggiornamento: 03/10/2026
+Versione documento: v1.1
+Applicazione: CosaFare (Piattaforma ed Eventi in Toscana)
+Documenti correlati: Termini e Condizioni di Utilizzo
+
+La presente informativa sul trattamento dei dati personali (di seguito, «Privacy Policy») 
+è resa ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 del Parlamento 
+Europeo e del Consiglio del 27 aprile 2016 («General Data Protection Regulation» o «GDPR»), 
+del D.Lgs. 196/2003 (Codice in materia di protezione dei dati personali) e successive 
+modifiche e integrazioni (D.Lgs. 101/2018).
+
+Il presente documento descrive le modalità, le finalità e le garanzie con cui vengono 
+raccolti, trattati e conservati i dati personali degli utenti che accedono, navigano o 
+interagiscono con l'applicazione mobile "CosaFare" e i servizi cloud a essa collegati.
+
+--------------------------------------------------------------------------------
+1. TITOLARE DEL TRATTAMENTO
+--------------------------------------------------------------------------------
+Il Titolare del trattamento dei dati personali relativi all'applicazione "CosaFare" è:
+- Titolare del Progetto: CosaFare
+- Sviluppatore / Referente: TFDLab
+- Sede / Indirizzo: Cascina, Pisa, Italia
+- Email per l'esercizio dei diritti e supporto privacy: tfdlab.info@gmail.com
+
+Ove nel prosieguo del documento si utilizzi il termine "Titolare", "noi", o "CosaFare", 
+ci si riferisce al soggetto sopra indicato quale responsabile delle determinazioni in 
+ordine alle finalità e ai mezzi del trattamento dei dati.
+
+--------------------------------------------------------------------------------
+2. AMBITO DI APPLICAZIONE E DESTINATARI
+--------------------------------------------------------------------------------
+La presente Privacy Policy si applica a chiunque utilizzi i servizi di CosaFare, e 
+specificamente a:
+1. Utenti Ospiti (Visitatori non autenticati): coloro che consultano liberamente 
+   l'App senza creare un profilo;
+2. Utenti Registrati: coloro che accedono all'App autenticandosi tramite il servizio 
+   Google Sign-In;
+3. Organizzatori e Referenti: persone fisiche o incaricati di enti, Pro Loco e 
+   associazioni che trasmettono informazioni, locandine e dettagli di contatto 
+   relativi a Eventi e sagre sul territorio toscano.
+
+L'applicazione è progettata per il territorio della Regione Toscana (province di Arezzo, 
+Firenze, Grosseto, Livorno, Lucca, Massa-Carrara, Pisa, Pistoia, Prato, Siena) ed è 
+distribuita tramite Google Play Store (e futuri store applicativi compatibili).
+
+--------------------------------------------------------------------------------
+3. CATEGORIE DI DATI PERSONALI TRATTATI
+--------------------------------------------------------------------------------
+A seconda della modalità di interazione dell'utente con l'App, CosaFare può trattare le 
+seguenti tipologie di dati personali:
+
+3.1. Dati di autenticazione e di account (Utenti Registrati):
+L'App non gestisce password dirette memorizzate in locale, bensì si avvale del 
+protocollo federato Google Sign-In gestito tramite Firebase Authentication.
+In fase di accesso con account Google vengono acquisiti:
+- Identificativo univoco utente (Firebase UID);
+- Indirizzo di posta elettronica (email);
+- Nome e Cognome associati all'account Google;
+- Immagine del profilo (URL avatar) fornita dall'account Google, ove disponibile.
+
+3.2. Dati relativi alle preferenze e all'utilizzo dell'App:
+- Elenco degli Eventi salvati tra i "Preferiti" dall'Utente Registrato;
+- Preferenze e filtri selezionati (es. province toscane d'interesse, categorie come 
+  sagre, festival, cultura, mercatini);
+- Stato di accettazione dei Termini e Condizioni e della presente Privacy Policy 
+  (memorizzato in locale sul dispositivo dell'Utente).
+
+3.3. Dati di geolocalizzazione (Posizione GPS):
+- Posizione geografica in tempo reale (coordinate di latitudine e longitudine 
+  del dispositivo).
+Modalità di acquisizione e trasparenza:
+L'acquisizione della posizione avviene ESCLUSIVAMENTE previo consenso esplicito 
+richiesto dal sistema operativo del dispositivo (permessi di geolocalizzazione 
+"Mentre l'app è in uso" o "Solo questa volta").
+I dati di localizzazione vengono utilizzati al solo fine di:
+a) Calcolare la distanza chilometrica (in linea d'aria o stradale) rispetto alla 
+   sede degli Eventi in catalogo;
+b) Ordinare gli Eventi in base alla vicinanza geografica rispetto all'utente;
+c) Visualizzare la posizione dell'utente sulla mappa interattiva (Google Maps SDK).
+IMPORTANTE: I dati GPS NON vengono salvati in modo permanente sui server del Titolare, 
+NON sono utilizzati per creare uno storico degli spostamenti dell'utente e NON sono 
+tracciati in background a schermata chiusa. In assenza di autorizzazione, l'Utente può 
+comunque utilizzare l'App selezionando manualmente la provincia o il comune d'interesse.
+
+3.4. Dati degli Organizzatori e contenuti degli Eventi:
+Per gli Organizzatori che comunicano o caricano contenuti sulle manifestazioni:
+- Dati identificativi dell'organizzatore (denominazione associazione, comitato o Pro Loco);
+- Recapiti pubblici di contatto (email di riferimento dell'evento, numeri telefonici di 
+  prenotazione, link a canali social o siti web ufficiali);
+- Materiale fotografico, locandine, programmi, menù gastronomici e listini prezzi.
+
+3.5. Dati tecnici, di log e di diagnostica:
+- Indirizzo IP di connessione;
+- Modello di dispositivo, produttore, marca e versione del sistema operativo (es. Android);
+- Timestamp di accesso e richieste di rete verso i database cloud (Firebase);
+- Codici identificativi di sessione e log di errore (utilizzati esclusivamente per 
+  finalità diagnostiche e di stabilità dell'applicazione).
+
+--------------------------------------------------------------------------------
+4. FINALITÀ DEL TRATTAMENTO E BASI GIURIDICHE
+--------------------------------------------------------------------------------
+I dati personali degli utenti vengono trattati per le seguenti finalità e in ossequio 
+alle basi giuridiche individuate dal GDPR:
+
+1. EROGAZIONE DEI SERVIZI RICHIESTI E GESTIONE DELL'APP
+   Finalità: Consentire la navigazione del catalogo eventi in Toscana, la ricerca per 
+   filtri, la visualizzazione di locandine e menù delle sagre, la gestione dei 
+   Preferiti per gli utenti registrati, il rendering delle mappe e l'avvio della 
+   navigazione verso gli eventi.
+   Base giuridica: Esecuzione di un contratto o misure precontrattuali di cui 
+   l'interessato è parte (Art. 6, par. 1, lett. b, GDPR).
+
+2. FUNZIONALITÀ DI GEOLOCALIZZAZIONE IN TEMPO REALE E MAPPE
+   Finalità: Identificazione della posizione istantanea per ordinare gli eventi 
+   limitrofi, calcolare le distanze rispetto alle sedi delle sagre o dei festival e 
+   visualizzare la posizione sulla mappa.
+   Base giuridica: Consenso espresso dell'interessato (Art. 6, par. 1, lett. a, GDPR), 
+   rilasciato tramite la specifica finestra di autorizzazione del sistema operativo 
+   e revocabile in qualsiasi momento dalle impostazioni del dispositivo.
+
+3. SICUREZZA INFORMATICA, MONITORAGGIO E PREVENZIONE ABUSI
+   Finalità: Protezione delle API, garanzia di integrità dei database Firebase, 
+   prevenzione di attacchi informatici, spam o accessi illeciti ai dati.
+   Base giuridica: Legittimo interesse del Titolare a mantenere sicura la propria 
+   infrastruttura digitale (Art. 6, par. 1, lett. f, GDPR).
+
+4. ADEMPIMENTO DI OBBLIGHI LEGALI
+   Finalità: Riscontro a richieste vincolanti delle Autorità di pubblica sicurezza o 
+   giudiziarie, gestione del contenzioso e adempimenti imposti dalla legge.
+   Base giuridica: Adempimento di un obbligo legale al quale è soggetto il Titolare 
+   (Art. 6, par. 1, lett. c, GDPR).
+
+--------------------------------------------------------------------------------
+5. NATURA DEL CONFERIMENTO DEI DATI
+--------------------------------------------------------------------------------
+- Dati essenziali di sessione e tecnici: il loro conferimento è implicito e necessario 
+  per il funzionamento dell'App su rete Internet. Il rifiuto rende impossibile la 
+  fruizione del servizio.
+- Autenticazione con Google: facoltativa. L'utente può scegliere di navigare come 
+  "Ospite". Il mancato login impedisce unicamente la memorizzazione sincronizzata 
+  dei Preferiti in cloud.
+- Dati di geolocalizzazione (GPS): facoltativi. Il diniego del permesso impedisce 
+  unicamente il calcolo automatico della vicinanza e l'ordinamento per distanza, ma 
+  non preclude la consultazione manuale di tutte le province toscane né la visualizzazione 
+  degli eventi sulla mappa.
+
+--------------------------------------------------------------------------------
+6. MODALITÀ DI TRATTAMENTO E MISURE DI SICUREZZA
+--------------------------------------------------------------------------------
+Il trattamento dei dati personali è svolto con l'ausilio di strumenti elettronici e 
+telematici conformemente ai principi di correttezza, liceità, trasparenza e 
+minimizzazione di cui all'art. 5 del GDPR.
+
+Sono adottate adeguate misure di sicurezza tecniche e organizzative ai sensi dell'art. 32 
+del GDPR volte a scongiurare accessi non autorizzati, divulgazione, modifica, perdita 
+o distruzione accidentale dei dati, tra cui:
+- Protocolli crittografici di trasporto sicuro (HTTPS / TLS) per tutte le comunicazioni 
+  tra l'applicazione e i server cloud;
+- Implementazione delle Firebase Security Rules per segregare e proteggere i dati 
+  degli utenti, assicurando che ciascun utente possa modificare esclusivamente i 
+  propri dati;
+- Accesso ai sistemi amministrativi limitato al Titolare mediante autenticazione a 
+  più fattori (2FA).
+
+--------------------------------------------------------------------------------
+7. PERIODO DI CONSERVAZIONE DEI DATI (DATA RETENTION)
+--------------------------------------------------------------------------------
+I dati personali vengono conservati per il tempo strettamente necessario a conseguire 
+le finalità per le quali sono stati raccolti, e precisamente:
+- Dati dell'account Utente Registrato e preferiti: conservati per l'intera durata di 
+  attività dell'account. In caso di inattività continuativa per oltre 24 mesi, il Titolare 
+  si riserva di eliminare l'account previa eventuale notifica, oppure all'atto della 
+  richiesta di cancellazione avanzata dall'utente.
+- Dati di geolocalizzazione (GPS): elaborati in tempo reale nella memoria volatile 
+  del dispositivo; NON vengono archiviati storicamente sui server del Titolare.
+- Log tecnici e di sicurezza: conservati per una durata massima di 12 mesi, salvo 
+  esigenze di accertamento di reati da parte dell'Autorità Giudiziaria.
+- Dati degli Eventi e recapiti Organizzatori: conservati per la durata della 
+  manifestazione e archiviati o rimossi al termine della stagione di riferimento.
+
+--------------------------------------------------------------------------------
+8. DESTINATARI DEI DATI E FORNITORI DI SERVIZI TERZI
+--------------------------------------------------------------------------------
+I dati personali raccolti possono essere comunicati o resi accessibili a fornitori di 
+servizi tecnologici che operano in qualità di Responsabili del Trattamento ai sensi 
+dell'art. 28 GDPR o come autonomi titolari. I principali fornitori comprendono:
+
+1. GOOGLE IRELAND LIMITED / GOOGLE LLC (Firebase)
+   - Finalità: Infrastruttura cloud di backend, autenticazione federata degli account 
+     (Firebase Auth), database NoSQL in tempo reale (Realtime Database), archiviazione 
+     immagini e locandine (Firebase Storage).
+   - Sede del fornitore: Dublino, Irlanda / Mountain View, California, USA.
+   - Informativa: https://firebase.google.com/support/privacy
+
+2. GOOGLE MAPS SDK (Google Ireland Limited / Google LLC)
+   - Finalità: Visualizzazione della cartografia interattiva e dei punti di interesse 
+     degli Eventi all'interno dell'applicazione tramite librerie Google Play Services.
+   - Dati trattati: Dati tecnici di rete e coordinate geografiche necessarie al rendering 
+     dei riquadri della mappa.
+   - Informativa: https://policies.google.com/privacy
+
+3. GOOGLE MAPS / APPLICAZIONI CARTOGRAFICHE DI SISTEMA (via Intent esterno)
+   - Quando l'Utente preme sul pulsante di navigazione verso un evento, l'App apre un 
+     collegamento esterno verso l'app di mappe installata sul dispositivo dell'utente 
+     (Google Maps, Waze, Apple Maps). Da quel momento la navigazione è disciplinata 
+     dalle policy del fornitore del navigatore prescelto.
+
+Nessun dato personale viene ceduto, venduto o commercializzato a soggetti terzi per 
+finalità di marketing o profilazione commerciale.
+
+--------------------------------------------------------------------------------
+9. TRASFERIMENTO DEI DATI VERSO PAESI EXTRA-SEE
+--------------------------------------------------------------------------------
+L'infrastruttura Google Cloud / Firebase impiegata da CosaFare alloca i propri database 
+prioritariamente all'interno dell'Unione Europea (Spazio Economico Europeo - SEE). 
+Tuttavia, l'utilizzo di taluni servizi forniti da Google LLC o affiliati può comportare 
+il transito o l'accesso a dati da server ubicati negli Stati Uniti d'America o in altri 
+Paesi terzi.
+
+Tali trasferimenti avvengono nel pieno rispetto del Capo V del GDPR e sono legittimati da:
+a) Decisione di adeguatezza della Commissione Europea per i trasferimenti verso gli 
+   Stati Uniti nell'ambito dell'EU-U.S. Data Privacy Framework (cui Google LLC aderisce);
+b) Adozione delle Clausole Contrattuali Standard (Standard Contractual Clauses - SCC) 
+   approvate dalla Commissione Europea, corredate da misure supplementari di cifratura 
+   e sicurezza.
+
+--------------------------------------------------------------------------------
+10. DIRITTI DELL'INTERESSATO (ARTICOLI 15-22 GDPR)
+--------------------------------------------------------------------------------
+In ogni momento, l'interessato ha il diritto di esercitare i diritti riconosciuti dagli 
+artt. 15-22 del Regolamento (UE) 2016/679, ovvero:
+- Diritto di Accesso (art. 15): ottenere conferma dell'esistenza di dati personali che 
+  lo riguardano e riceverne copia;
+- Diritto di Rettifica (art. 16): ottenere l'aggiornamento o la correzione dei dati 
+  inesatti o incompleti;
+- Diritto alla Cancellazione / Diritto all'Oblio (art. 17): ottenere la cancellazione 
+  definitiva dei propri dati personali;
+- Diritto di Limitazione del trattamento (art. 18): richiedere la sospensione del 
+  trattamento in presenza di determinate condizioni di legge;
+- Diritto alla Portabilità (art. 20): ricevere i propri dati in formato strutturato, di 
+  uso comune e leggibile da dispositivo automatico, per trasmetterli a un altro titolare;
+- Diritto di Opposizione (art. 21): opporsi in qualsiasi momento, per motivi connessi 
+  alla propria situazione particolare, al trattamento basato sul legittimo interesse;
+- Diritto di Revoca del Consenso: revocare in qualsiasi momento il consenso precedentemente 
+  accordato (es. per la geolocalizzazione GPS), senza pregiudicare la liceità del 
+  trattamento antecedentemente prestato.
+
+10.1. PROCEDURA DIRETTA IN-APP PER L'ELIMINAZIONE DELL'ACCOUNT:
+Per garantire la massima tempestività ed effettività nell'esercizio del diritto alla 
+cancellazione, CosaFare integra all'interno dell'App, nella sezione "Profilo" o 
+"Impostazioni", un pulsante dedicato denominato «Elimina Account».
+L'attivazione della funzione avvia la cancellazione immediata e irreversibile del 
+profilo dell'Utente da Firebase Authentication e l'eliminazione dei relativi dati e 
+preferenze dal database di CosaFare.
+
+10.2. Esercizio dei diritti via email:
+Per qualsiasi ulteriore istanza o richiesta relativa ai propri dati personali, 
+l'interessato può indirizzare una comunicazione scritta al Titolare:
+- Email: tfdlab.info@gmail.com
+Il Titolare fornirà riscontro alla richiesta senza ingiustificato ritardo e comunque 
+entro 30 giorni dalla ricezione della stessa.
+
+10.3. Diritto di reclamo:
+Qualora ritenga che il trattamento dei propri dati personali violi il GDPR, l'interessato 
+ha sempre il diritto di proporre reclamo all'Autorità Garante per la Protezione dei Dati 
+Personali (Piazza Venezia 11, 00187 Roma - www.garanteprivacy.it) o all'autorità di 
+controllo dello Stato membro UE in cui risiede abitualmente o lavora.
+
+--------------------------------------------------------------------------------
+11. TUTELA DEI MINORI
+--------------------------------------------------------------------------------
+L'App non è diretta a minori di anni 14. Non raccogliamo intenzionalmente dati 
+personali di utenti che non abbiano raggiunto l'età minima per l'autonomia digitale. 
+Qualora un genitore o tutore legale apprenda che un minore ha fornito propri dati 
+personali attraverso l'App senza opportuna autorizzazione, è pregato di contattare 
+tempestivamente il Titolare all'indirizzo tfdlab.info@gmail.com al fine di provvedere 
+all'immediata eliminazione delle informazioni.
+
+--------------------------------------------------------------------------------
+12. PROCESSI DECISIONALI AUTOMATIZZATI E PROFILAZIONE
+--------------------------------------------------------------------------------
+Il Titolare NON adotta processi decisionali basati interamente su trattamenti 
+automatizzati né forme di profilazione che producano effetti giuridici sull'interessato 
+o che incidano significativamente sulla sua persona ai sensi dell'art. 22 del GDPR. 
+I filtri di visualizzazione geografica per vicinanza o provincia operano come meri 
+criteri di ordinamento tecnico del catalogo informativo a beneficio dell'utente.
+
+--------------------------------------------------------------------------------
+13. AGGIORNAMENTI DELLA PRESENTE PRIVACY POLICY
+--------------------------------------------------------------------------------
+Il Titolare si riserva la facoltà di apportare modifiche o aggiornamenti alla presente 
+Informativa sulla Privacy, anche in relazione all'evoluzione normativa in materia di dati 
+personali o all'introduzione di nuove funzionalità nell'applicazione CosaFare.
+
+Le eventuali versioni aggiornate saranno pubblicate con indicazione del numero di 
+versione e della data di ultimo aggiornamento. Si consiglia di consultare con regolarità 
+questo testo prima di utilizzare l'applicazione. In presenza di variazioni di rilievo, 
+gli utenti potranno essere informati tramite avviso in-app o richiesta di rinnovo del 
+consenso all'avvio dell'applicazione.
+
+--------------------------------------------------------------------------------
+14. CONTATTI DEL TITOLARE
+--------------------------------------------------------------------------------
+Per chiarimenti, richieste di informazioni o per l'esercizio dei propri diritti:
+- Email: tfdlab.info@gmail.com
+- Oggetto comunicazione: "Richiesta Privacy - App CosaFare"
+- Riferimento: Progetto CosaFare
+
+================================================================================
+                           FINE DEL DOCUMENTO
+================================================================================

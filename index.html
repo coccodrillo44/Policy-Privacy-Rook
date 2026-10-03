@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informativa Privacy — CosaFare</title>
+  <meta name="description" content="Informativa sul trattamento dei dati personali (Privacy Policy) dell'applicazione CosaFare - Guida ad eventi, sagre e manifestazioni in Toscana ai sensi del Regolamento UE 2016/679 (GDPR).">
+  <meta name="theme-color" content="#c84b31">
+
+  <!-- Favicon SVG Identitaria Toscana -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23c84b31'/><path d='M16 6C11.58 6 8 9.58 8 14c0 6 8 12 8 12s8-6 8-12c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z' fill='white'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barra di Avanzamento Lettura -->
+  <div id="readingProgress" class="reading-progress-bar" aria-hidden="true"></div>
+
+  <!-- Intestazione Principale / Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <a href="#hero" class="brand-logo" aria-label="Torna all'inizio">
+          <span class="logo-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </span>
+          <div class="brand-text">
+            <span class="brand-name">CosaFare</span>
+            <span class="brand-tagline">Eventi & Tradizioni in Toscana</span>
+          </div>
+        </a>
+        <div class="header-badges">
+          <span class="badge badge-version">v1.1</span>
+          <span class="badge badge-date">03 Ottobre 2026</span>
+        </div>
+      </div>
+
+      <!-- Azioni dell'Header -->
+      <div class="header-actions">
+        <!-- Campo di Ricerca Rapida -->
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Cerca clausole (es. GPS, Google, cancellazione, diritti)..." aria-label="Cerca nell'informativa privacy">
+          <button id="clearSearchBtn" class="clear-search-btn" aria-label="Cancella ricerca" hidden>&times;</button>
+          <span class="search-shortcut" title="Premi / o Ctrl+K per cercare">/</span>
+        </div>
+
+        <!-- Pulsante Stampa / PDF -->
+        <button id="printBtn" class="action-btn" title="Stampa o salva come PDF">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span class="btn-text">Stampa / PDF</span>
+        </button>
+
+        <!-- Selettore Tema Chiaro/Scuro -->
+        <button id="themeToggle" class="action-btn theme-btn" aria-label="Cambia tema chiaro/scuro" title="Cambia tema chiaro/scuro">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Toggle Menù Mobile Indice -->
+        <button id="mobileTocToggle" class="action-btn mobile-toc-btn" aria-label="Apri indice dei contenuti">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <span class="btn-text">Indice</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Conteggio Risultati Ricerca -->
+  <div id="searchStatusBar" class="search-status-bar" hidden>
+    <div class="search-status-inner">
+      <span id="searchResultCount">0 corrispondenze trovate</span>
+      <div class="search-nav-controls">
+        <button id="prevMatchBtn" title="Precedente (Shift+Enter)">&uarr;</button>
+        <button id="nextMatchBtn" title="Successivo (Enter)">&darr;</button>
+        <button id="closeSearchAlertBtn" class="close-search">&times;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenitore Principale -->
+  <div class="main-wrapper">
+    <!-- Hero Section / Introduzione -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Informativa Privacy Ufficiale (GDPR)
+        </div>
+        <h1 class="hero-title">Informativa sul Trattamento dei Dati Personali</h1>
+        <p class="hero-subtitle">
+          Informativa resa ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 («GDPR») e della normativa italiana vigente per l'applicazione mobile e la piattaforma <strong>CosaFare</strong>.
+        </p>
+
+        <!-- Informazioni Metadati -->
+        <div class="meta-strip">
+          <div class="meta-item">
+            <span class="meta-label">Ultimo aggiornamento</span>
+            <span class="meta-value">03 Ottobre 2026</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label">Versione documento</span>
+            <span class="meta-value">v1.1</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label">Titolare / Sviluppo</span>
+            <span class="meta-value">Progetto CosaFare &bull; TFDLab</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label">Tempo di lettura</span>
+            <span class="meta-value" id="readTimeEstimate">~7 minuti</span>
+          </div>
+        </div>
+
+        <!-- Schede Punti Chiave in Sintesi -->
+        <div class="key-points-grid">
+          <div class="point-card">
+            <div class="point-icon">🛡️</div>
+            <div class="point-body">
+              <h3>Conformità GDPR</h3>
+              <p>Trattamento fondato su trasparenza, correttezza, liceità e rigorosa minimizzazione dei dati (Reg. UE 2016/679).</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">🔑</div>
+            <div class="point-body">
+              <h3>Google Sign-In & Ospite</h3>
+              <p>Naviga in modalità anonima come Ospite o accedi con Google per memorizzare i tuoi preferiti.</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">📍</div>
+            <div class="point-body">
+              <h3>GPS Trasparente & Zero Storico</h3>
+              <p>La geolocalizzazione serve solo a calcolare la vicinanza agli eventi. Nessun tracciamento in background né archivio storico.</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">🗑️</div>
+            <div class="point-body">
+              <h3>Eliminazione Account In-App</h3>
+              <p>Diritto alla cancellazione immediato ed autonomo direttamente dalla sezione Profilo dell'applicazione.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layout a due colonne: Sidebar Indice + Contenuto Documento -->
+    <div class="content-layout">
+      <!-- Sidebar Indice (TOC) -->
+      <aside class="sidebar-wrapper" id="sidebarWrapper">
+        <div class="sidebar-sticky">
+          <div class="sidebar-header">
+            <h2 class="sidebar-title">Indice dei Contenuti</h2>
+            <span class="toc-counter">14 Sezioni</span>
+          </div>
+
+          <nav class="toc-nav" id="tocNav" aria-label="Indice dei capitoli privacy">
+            <ol class="toc-list">
+              <li><a href="#sec-1" class="toc-link"><span class="toc-num">01</span> Titolare del Trattamento</a></li>
+              <li><a href="#sec-2" class="toc-link"><span class="toc-num">02</span> Ambito di Applicazione e Destinatari</a></li>
+              <li><a href="#sec-3" class="toc-link"><span class="toc-num">03</span> Categorie di Dati Personali Trattati</a></li>
+              <li><a href="#sec-4" class="toc-link"><span class="toc-num">04</span> Finalità e Basi Giuridiche</a></li>
+              <li><a href="#sec-5" class="toc-link"><span class="toc-num">05</span> Natura del Conferimento dei Dati</a></li>
+              <li><a href="#sec-6" class="toc-link"><span class="toc-num">06</span> Modalità di Trattamento e Sicurezza</a></li>
+              <li><a href="#sec-7" class="toc-link"><span class="toc-num">07</span> Periodo di Conservazione (Data Retention)</a></li>
+              <li><a href="#sec-8" class="toc-link"><span class="toc-num">08</span> Destinatari e Fornitori Terzi</a></li>
+              <li><a href="#sec-9" class="toc-link"><span class="toc-num">09</span> Trasferimento Dati Extra-SEE</a></li>
+              <li><a href="#sec-10" class="toc-link"><span class="toc-num">10</span> Diritti dell'Interessato (Artt. 15-22 GDPR)</a></li>
+              <li><a href="#sec-11" class="toc-link"><span class="toc-num">11</span> Tutela dei Minori</a></li>
+              <li><a href="#sec-12" class="toc-link"><span class="toc-num">12</span> Processi Decisionali e Profilazione</a></li>
+              <li><a href="#sec-13" class="toc-link"><span class="toc-num">13</span> Aggiornamenti della Privacy Policy</a></li>
+              <li><a href="#sec-14" class="toc-link"><span class="toc-num">14</span> Contatti del Titolare</a></li>
+            </ol>
+          </nav>
+
+          <!-- Riquadro Supporto Rapido Sidebar -->
+          <div class="sidebar-help-card">
+            <h4>Hai domande sulla Privacy?</h4>
+            <p>Contatta direttamente il Titolare per l'esercizio dei tuoi diritti GDPR o per richiedere chiarimenti.</p>
+            <a href="mailto:tfdlab.info@gmail.com" class="sidebar-contact-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>tfdlab.info@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Corpo del Testo Legale -->
+      <main class="legal-document" id="legalDocument">
+
+        <!-- Box Introduttivo / Premessa Formale -->
+        <div class="callout callout-gdpr" style="margin-bottom: 28px;">
+          <div class="callout-icon">📜</div>
+          <div class="callout-content">
+            <strong>Premessa Normativa & Inquadramento Giuridico:</strong><br>
+            La presente informativa sul trattamento dei dati personali (di seguito, <strong>«Privacy Policy»</strong>) è resa ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 del Parlamento Europeo e del Consiglio del 27 aprile 2016 (<strong>«General Data Protection Regulation»</strong> o <strong>«GDPR»</strong>), del D.Lgs. 196/2003 (Codice in materia di protezione dei dati personali) e successive modifiche e integrazioni (D.Lgs. 101/2018).
+            <p style="margin-top: 8px; margin-bottom: 0;">
+              Il presente documento descrive le modalità, le finalità e le garanzie con cui vengono raccolti, trattati e conservati i dati personali degli utenti che accedono, navigano o interagiscono con l'applicazione mobile <strong>"CosaFare"</strong> e i servizi cloud a essa collegati.
+            </p>
+            <p style="margin-top: 8px; margin-bottom: 0; font-size: 0.875rem;">
+              <strong>Documento correlato:</strong> <a href="../TerminiCondizioni/index.html" class="link-styled">Termini e Condizioni di Utilizzo di CosaFare &rarr;</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 1 -->
+        <!-- ========================================== -->
+        <article id="sec-1" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 01</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">1. Titolare del Trattamento</h2>
+              <button class="copy-anchor-btn" data-target="sec-1" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              Il Titolare del trattamento dei dati personali relativi all'applicazione mobile <strong>"CosaFare"</strong> e all'infrastruttura di supporto è:
+            </p>
+
+            <div class="operator-card">
+              <div class="operator-badge">Dati del Titolare</div>
+              <ul class="operator-details">
+                <li>
+                  <span class="detail-label">Titolare del Progetto:</span>
+                  <span class="detail-value"><strong>CosaFare</strong></span>
+                </li>
+                <li>
+                  <span class="detail-label">Sviluppatore / Referente:</span>
+                  <span class="detail-value"><strong>TFDLab</strong></span>
+                </li>
+                <li>
+                  <span class="detail-label">Sede / Ubicazione:</span>
+                  <span class="detail-value">Cascina, Pisa, Toscana, Italia</span>
+                </li>
+                <li>
+                  <span class="detail-label">Email per l'esercizio dei diritti e supporto privacy:</span>
+                  <span class="detail-value"><a href="mailto:tfdlab.info@gmail.com" class="link-styled">tfdlab.info@gmail.com</a></span>
+                </li>
+              </ul>
+            </div>
+
+            <p>
+              Ove nel prosieguo del presente documento si utilizzi il termine <em>«Titolare»</em>, <em>«noi»</em>, o <em>«CosaFare»</em>, ci si riferisce al soggetto sopra indicato quale responsabile delle determinazioni in ordine alle finalità e ai mezzi del trattamento dei dati personali.
+            </p>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 2 -->
+        <!-- ========================================== -->
+        <article id="sec-2" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 02</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">2. Ambito di Applicazione e Destinatari</h2>
+              <button class="copy-anchor-btn" data-target="sec-2" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              La presente Privacy Policy si applica a chiunque utilizzi i servizi di CosaFare, e specificamente a:
+            </p>
+
+            <div class="scope-cards-list">
+              <div class="scope-item">
+                <span class="scope-badge">1</span>
+                <div>
+                  <strong>Utenti Ospiti (Visitatori non autenticati)</strong>
+                  <p>Coloro che consultano liberamente l'App in modalità anonima (Guest Mode) per visualizzare il catalogo eventi senza creare o associare un profilo utente.</p>
+                </div>
+              </div>
+
+              <div class="scope-item">
+                <span class="scope-badge">2</span>
+                <div>
+                  <strong>Utenti Registrati</strong>
+                  <p>Coloro che accedono all'App autenticandosi tramite il servizio federato Google Sign-In per salvare e sincronizzare in cloud i propri eventi preferiti.</p>
+                </div>
+              </div>
+
+              <div class="scope-item">
+                <span class="scope-badge">3</span>
+                <div>
+                  <strong>Organizzatori e Referenti</strong>
+                  <p>Persone fisiche o incaricati di enti pubblici, Pro Loco, comitati e associazioni territoriali che trasmettono informazioni, locandine e recapiti di contatto relativi a eventi, sagre e manifestazioni in Toscana.</p>
+                </div>
+              </div>
+            </div>
+
+            <p style="margin-top: 18px;">
+              L'applicazione è progettata e orientata al territorio della <strong>Regione Toscana</strong> ed è distribuita ufficialmente tramite <strong>Google Play Store</strong> (nonché eventuali futuri store applicativi compatibili):
+            </p>
+
+            <div class="provinces-pills">
+              <span class="province-pill">Arezzo</span>
+              <span class="province-pill">Firenze</span>
+              <span class="province-pill">Grosseto</span>
+              <span class="province-pill">Livorno</span>
+              <span class="province-pill">Lucca</span>
+              <span class="province-pill">Massa-Carrara</span>
+              <span class="province-pill">Pisa</span>
+              <span class="province-pill">Pistoia</span>
+              <span class="province-pill">Prato</span>
+              <span class="province-pill">Siena</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 3 -->
+        <!-- ========================================== -->
+        <article id="sec-3" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 03</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">3. Categorie di Dati Personali Trattati</h2>
+              <button class="copy-anchor-btn" data-target="sec-3" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              A seconda della modalità di interazione dell'utente con l'App, CosaFare può raccogliere e trattare le seguenti tipologie di dati personali:
+            </p>
+
+            <!-- 3.1 Dati Account -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.1. Dati di autenticazione e di account (Utenti Registrati)</h3>
+              <p>
+                L'App non gestisce né memorizza password dirette sui propri server o in locale, bensì si avvale del protocollo di autenticazione federata sicura <strong>Google Sign-In</strong> gestito tramite l'infrastruttura Firebase Authentication. In fase di accesso con account Google vengono acquisiti:
+              </p>
+              <ul class="styled-list">
+                <li><strong>Identificativo univoco utente (Firebase UID):</strong> codice alfanumerico univoco per associare i preferiti dell'utente in sicurezza;</li>
+                <li><strong>Indirizzo di posta elettronica (email):</strong> associato all'account Google utilizzato;</li>
+                <li><strong>Nome e Cognome:</strong> nome anagrafico o nickname associato al profilo Google;</li>
+                <li><strong>Immagine del profilo (URL avatar):</strong> link alla foto profilo pubblica fornita da Google, ove disponibile.</li>
+              </ul>
+            </div>
+
+            <!-- 3.2 Dati Preferenze -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.2. Dati relativi alle preferenze e all'utilizzo dell'App</h3>
+              <ul class="styled-list">
+                <li><strong>Elenco degli Eventi nei "Preferiti":</strong> identificativi degli eventi salvati dall'Utente Registrato nel proprio profilo cloud;</li>
+                <li><strong>Preferenze e filtri di navigazione:</strong> criteri impostati dall'utente (es. province toscane selezionate, categorie come sagre, rassegne enogastronomiche, festival musicali, eventi culturali, fiere e mercatini);</li>
+                <li><strong>Stato del consenso e accettazione termini:</strong> memorizzato in locale sul dispositivo dell'Utente (es. data e versione accettata dei Termini e Condizioni e della presente Privacy Policy).</li>
+              </ul>
+            </div>
+
+            <!-- 3.3 Posizione GPS -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.3. Dati di geolocalizzazione (Posizione GPS)</h3>
+              <p>
+                CosaFare può rilevare la <strong>posizione geografica in tempo reale</strong> (coordinate di latitudine e longitudine del dispositivo mobile).
+              </p>
+              <p>
+                <strong>Modalità di acquisizione e massima trasparenza:</strong><br>
+                L'acquisizione della posizione avviene <strong>ESCLUSIVAMENTE previo consenso esplicito</strong> richiesto dal sistema operativo del dispositivo dell'utente (finestra autorizzativa di sistema: <em>"Mentre l'app è in uso"</em> o <em>"Solo questa volta"</em>).
+              </p>
+              <p>I dati di localizzazione vengono utilizzati al solo fine di:</p>
+              <ol class="styled-list">
+                <li>Calcolare la distanza chilometrica (in linea d'aria o stradale) rispetto alla sede degli Eventi presenti in catalogo;</li>
+                <li>Ordinare l'elenco degli Eventi in base alla prossimità geografica rispetto alla posizione attuale dell'utente;</li>
+                <li>Visualizzare la posizione dell'utente sulla mappa interattiva integrata con Google Maps SDK.</li>
+              </ol>
+
+              <div class="callout callout-warning">
+                <div class="callout-icon">⚠️</div>
+                <div class="callout-content">
+                  <strong>GARANZIA DI RISERVATEZZA SUL GPS — ZERO STORICO:</strong><br>
+                  I dati GPS <strong>NON vengono salvati in modo permanente</strong> sui server del Titolare, <strong>NON sono utilizzati</strong> per profilare o creare uno storico degli spostamenti dell'utente e <strong>NON vengono tracciati in background</strong> a schermata chiusa o con app inattiva.<br>
+                  In caso di rifiuto del permesso GPS, l'Utente può comunque utilizzare l'applicazione selezionando manualmente la provincia o il comune toscano di proprio interesse.
+                </div>
+              </div>
+            </div>
+
+            <!-- 3.4 Dati Organizzatori -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.4. Dati degli Organizzatori e contenuti degli Eventi</h3>
+              <p>
+                Per gli Organizzatori e referenti che comunicano, inoltrano o caricano informazioni sulle manifestazioni:
+              </p>
+              <ul class="styled-list">
+                <li><strong>Dati identificativi:</strong> denominazione dell'ente organizzatore, associazione, Pro Loco o comitato promotore;</li>
+                <li><strong>Recapiti pubblici di contatto:</strong> indirizzo email di riferimento per il pubblico, recapiti telefonici per prenotazioni tavoli/eventi, link ai siti web ufficiali o canali social;</li>
+                <li><strong>Materiale descrittivo e multimediale:</strong> fotografie, locandine promozionali, programmi di svolgimento, menù gastronomici, indicazioni per celiaci o allergeni e listini prezzi al pubblico.</li>
+              </ul>
+            </div>
+
+            <!-- 3.5 Dati Tecnici -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.5. Dati tecnici, di log e di diagnostica</h3>
+              <ul class="styled-list">
+                <li><strong>Indirizzo IP:</strong> acquisito transitoriamente per l'istradamento delle richieste di rete via HTTPS;</li>
+                <li><strong>Informazioni sul dispositivo:</strong> marca, modello di dispositivo, versione del sistema operativo (es. versione Android);</li>
+                <li><strong>Timestamp e log di rete:</strong> registrazioni temporali delle chiamate verso i database cloud Firebase;</li>
+                <li><strong>Log di diagnostica ed errori:</strong> tracciamento di crash o anomalie tecniche, impiegato in forma aggregata al solo fine di mantenere l'app stabile, fluida e sicura.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 4 -->
+        <!-- ========================================== -->
+        <article id="sec-4" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 04</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">4. Finalità del Trattamento e Basi Giuridiche</h2>
+              <button class="copy-anchor-btn" data-target="sec-4" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              I dati personali degli utenti vengono trattati esclusivamente per finalità determinate, esplicite e legittime, in conformità all'art. 6 del Regolamento (UE) 2016/679 («GDPR»):
+            </p>
+
+            <div class="features-showcase">
+              <!-- Finalità 1 -->
+              <div class="feature-box">
+                <div class="feature-num">01</div>
+                <div class="feature-main">
+                  <h4>Erogazione dei Servizi Richiesti e Gestione dell'App</h4>
+                  <p>
+                    Consentire la consultazione del catalogo eventi toscani, la ricerca per filtri tematici o provinciali, la visualizzazione di schede dettagliate, locandine e menù gastronomici, la gestione e sincronizzazione della lista "Preferiti" per gli utenti registrati, il rendering delle mappe e l'avvio della navigazione guidata verso la sede della sagra.
+                  </p>
+                  <span class="rule-badge">Art. 6, par. 1, lett. b, GDPR — Esecuzione del Contratto</span>
+                </div>
+              </div>
+
+              <!-- Finalità 2 -->
+              <div class="feature-box">
+                <div class="feature-num">02</div>
+                <div class="feature-main">
+                  <h4>Geolocalizzazione in Tempo Reale e Calcolo Distanze</h4>
+                  <p>
+                    Rilevare la posizione GPS istantanea per ordinare automaticamente gli eventi in base alla prossimità, mostrare la distanza chilometrica residua e posizionare l'icona dell'utente sulla mappa interattiva.
+                  </p>
+                  <span class="rule-badge rule-badge-success">Art. 6, par. 1, lett. a, GDPR — Consenso Espresso</span>
+                  <p style="font-size: 0.8125rem; color: var(--text-light); margin-top: 6px; margin-bottom: 0 !important;">
+                    Il consenso viene prestato tramite la finestra di sistema operativo ed è revocabile in ogni momento dalle impostazioni dello smartphone.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Finalità 3 -->
+              <div class="feature-box">
+                <div class="feature-num">03</div>
+                <div class="feature-main">
+                  <h4>Sicurezza Informatica, Monitoraggio e Prevenzione Abusi</h4>
+                  <p>
+                    Proteggere l'integrità delle API e dei database cloud Firebase, prevenire accessi non autorizzati o fraudolenti, mitigare tentativi di attacco DDoS o spam, e garantire la resilienza tecnica dell'infrastruttura.
+                  </p>
+                  <span class="rule-badge rule-badge-purple">Art. 6, par. 1, lett. f, GDPR — Legittimo Interesse</span>
+                </div>
+              </div>
+
+              <!-- Finalità 4 -->
+              <div class="feature-box">
+                <div class="feature-num">04</div>
+                <div class="feature-main">
+                  <h4>Adempimento di Obblighi Legali e Difesa dei Diritti</h4>
+                  <p>
+                    Adempiere a obblighi prescritti da leggi statali, regolamenti europei o ordini vincolanti dell'Autorità Giudiziaria o delle Forze di Polizia, nonché far valere o difendere un diritto del Titolare in sede stragiudiziale o contenziosa.
+                  </p>
+                  <span class="rule-badge rule-badge-warning">Art. 6, par. 1, lett. c, GDPR — Obbligo di Legge</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 5 -->
+        <!-- ========================================== -->
+        <article id="sec-5" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 05</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">5. Natura del Conferimento dei Dati</h2>
+              <button class="copy-anchor-btn" data-target="sec-5" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              Il conferimento dei dati personali assume natura differente a seconda delle funzioni utilizzate:
+            </p>
+
+            <div class="rules-block">
+              <div class="rule-row">
+                <span class="rule-badge rule-badge-danger">Obbligatorio Tecnico</span>
+                <div class="rule-text">
+                  <strong>Dati essenziali di sessione e navigazione:</strong> il conferimento è implicito e tecnicamente indispensabile per la connessione dell'App su rete Internet. Il mancato conferimento rende tecnicamente impossibile erogare i contenuti del catalogo.
+                </div>
+              </div>
+
+              <div class="rule-row">
+                <span class="rule-badge">Facoltativo / Account</span>
+                <div class="rule-text">
+                  <strong>Autenticazione con Google Sign-In:</strong> l'accesso con account Google è del tutto facoltativo. L'utente può navigare liberamente come <em>«Ospite»</em>. La mancata autenticazione preclude esclusivamente la sincronizzazione dei Preferiti tra dispositivi o dopo la reinstallazione.
+                </div>
+              </div>
+
+              <div class="rule-row">
+                <span class="rule-badge rule-badge-success">Facoltativo / GPS</span>
+                <div class="rule-text">
+                  <strong>Permesso di geolocalizzazione (GPS):</strong> l'accesso alla posizione geografica è facoltativo. L'eventuale rifiuto impedisce unicamente il calcolo automatico della distanza e l'ordinamento dinamico per vicinanza, ma non impedisce la normale consultazione manuale di tutte le province toscane e la visione degli eventi sulla mappa.
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 6 -->
+        <!-- ========================================== -->
+        <article id="sec-6" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 06</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">6. Modalità di Trattamento e Misure di Sicurezza</h2>
+              <button class="copy-anchor-btn" data-target="sec-6" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              Il trattamento dei dati personali è effettuato mediante strumenti elettronici, telematici e automatizzati nel rispetto dei principi di correttezza, liceità, trasparenza, limitazione delle finalità e minimizzazione dei dati sanciti dall'art. 5 del GDPR.
+            </p>
+            <p>
+              In conformità all'art. 32 del GDPR, il Titolare ha implementato adeguate misure di sicurezza tecniche e organizzative al fine di prevenire la perdita dei dati, usi illeciti, accessi non autorizzati o alterazioni accidentali:
+            </p>
+
+            <div class="definitions-grid">
+              <div class="definition-card">
+                <h3 class="def-term">🔒 Crittografia in Transito (HTTPS/TLS)</h3>
+                <p class="def-desc">Tutte le comunicazioni tra l'applicazione client, le API e i server cloud Firebase avvengono attraverso canali cifrati con protocolli di sicurezza avanzati TLS/HTTPS.</p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">🛡️ Firebase Security Rules</h3>
+                <p class="def-desc">Regole di sicurezza server-side granulari che garantiscono la segregazione dei dati: ciascun utente autenticato può accedere ed alterare unicamente i propri preferiti e dati associati al proprio UID.</p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">🔑 Autenticazione a Due Fattori (2FA)</h3>
+                <p class="def-desc">Gli accessi amministrativi alla console di gestione Firebase, agli archivi storage e ai repository di codice sono presidiati da autenticazione a più fattori riservata al Titolare.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 7 -->
+        <!-- ========================================== -->
+        <article id="sec-7" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 07</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">7. Periodo di Conservazione dei Dati (Data Retention)</h2>
+              <button class="copy-anchor-btn" data-target="sec-7" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              I dati personali vengono conservati per il tempo strettamente necessario a conseguire le finalità per le quali sono stati raccolti, e nello specifico:
+            </p>
+
+            <div class="jurisdiction-box">
+              <div class="jurisdiction-card">
+                <div class="card-icon">👤</div>
+                <h4>Account Utente e Preferiti</h4>
+                <p>
+                  I dati del profilo e la lista dei preferiti sono conservati per l'intera durata di attività dell'account. In caso di inattività prolungata e continuativa per oltre <strong>24 mesi</strong>, il Titolare si riserva la facoltà di cancellare l'account, oppure all'atto della richiesta diretta di cancellazione avanzata dall'utente.
+                </p>
+              </div>
+
+              <div class="jurisdiction-card">
+                <div class="card-icon">📍</div>
+                <h4>Geolocalizzazione GPS</h4>
+                <p>
+                  I dati di localizzazione vengono elaborati <strong>esclusivamente in tempo reale</strong> nella memoria volatile del dispositivo. <strong>Nessun dato di posizione viene salvato o storicizzato</strong> sui server del Titolare.
+                </p>
+              </div>
+
+              <div class="jurisdiction-card">
+                <div class="card-icon">📋</div>
+                <h4>Log Tecnici e di Diagnostica</h4>
+                <p>
+                  I log tecnici di connessione e gli indirizzi IP sono conservati per una durata massima di <strong>12 mesi</strong> a fini di sicurezza, salvo necessità di accertamento di reati da parte dell'Autorità Giudiziaria.
+                </p>
+              </div>
+
+              <div class="jurisdiction-card">
+                <div class="card-icon">🎪</div>
+                <h4>Dati Eventi e Recapiti Organizzatori</h4>
+                <p>
+                  I dati descrittivi delle sagre e i recapiti pubblici degli organizzatori vengono conservati per la durata della manifestazione e archiviati o rimossi al termine della stagione o del ciclo annuale di riferimento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 8 -->
+        <!-- ========================================== -->
+        <article id="sec-8" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 08</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">8. Destinatari dei Dati e Fornitori di Servizi Terzi</h2>
+              <button class="copy-anchor-btn" data-target="sec-8" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              I dati personali raccolti possono essere comunicati o resi accessibili a fornitori terzi di servizi tecnologici che operano in qualità di <strong>Responsabili del Trattamento</strong> ai sensi dell'art. 28 GDPR o come autonomi titolari:
+            </p>
+
+            <div class="definitions-grid">
+              <div class="definition-card">
+                <h3 class="def-term">1. Google Firebase (Google Ireland Ltd / Google LLC)</h3>
+                <p class="def-desc">
+                  <strong>Finalità:</strong> Backend as a Service, autenticazione federata (Firebase Auth), database NoSQL real-time e storage distribuito per locandine e immagini.<br>
+                  <strong>Sede:</strong> Dublino, Irlanda / Mountain View, USA.<br>
+                  <strong>Informativa:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer" class="link-styled link-external">firebase.google.com/support/privacy &nearr;</a>
+                </p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">2. Google Maps SDK (Google Ireland Ltd / Google LLC)</h3>
+                <p class="def-desc">
+                  <strong>Finalità:</strong> Rendering della cartografia vettoriale interattiva e visualizzazione dei punti di interesse all'interno dell'app.<br>
+                  <strong>Dati trattati:</strong> Coordinate geografiche istantanee e dati tecnici di connessione.<br>
+                  <strong>Informativa:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="link-styled link-external">policies.google.com/privacy &nearr;</a>
+                </p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">3. Navigatori di Sistema (via Intent Esterno)</h3>
+                <p class="def-desc">
+                  <strong>Finalità:</strong> Quando l'utente preme sul pulsante "Avvia Navigazione", l'app invia le coordinate della sagra all'app di mappe installata sullo smartphone (Google Maps, Waze, Apple Maps). Da tale momento la navigazione è disciplinata dalle policy dell'app terza prescelta.
+                </p>
+              </div>
+            </div>
+
+            <div class="callout callout-tip" style="margin-top: 20px;">
+              <div class="callout-icon">✨</div>
+              <div class="callout-content">
+                <strong>DIVIETO DI COMMERCIALIZZAZIONE DEI DATI:</strong><br>
+                Nessun dato personale raccolto da CosaFare viene venduto, ceduto, concesso in licenza o commercializzato a intermediari terzi per finalità pubblicitarie, di marketing o di profilazione commerciale.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 9 -->
+        <!-- ========================================== -->
+        <article id="sec-9" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 09</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">9. Trasferimento dei Dati Verso Paesi Extra-SEE</h2>
+              <button class="copy-anchor-btn" data-target="sec-9" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              L'infrastruttura Google Cloud / Firebase impiegata da CosaFare alloca i propri database prioritariamente all'interno dell'Unione Europea (Spazio Economico Europeo - SEE). Tuttavia, la natura globale dei servizi cloud forniti da Google LLC può comportare il transito o l'accesso a dati da server situati negli Stati Uniti d'America o in altri Paesi terzi.
+            </p>
+            <p>
+              Tali trasferimenti avvengono nel rigoroso rispetto del <strong>Capo V del GDPR</strong> e sono legittimati da:
+            </p>
+            <ul class="styled-list">
+              <li>
+                <strong>Decisione di Adeguatezza della Commissione Europea:</strong> applicabile ai trasferimenti verso gli Stati Uniti nell'ambito del <em>Data Privacy Framework (EU-U.S. DPF)</em>, cui Google LLC ha formalmente aderito;
+              </li>
+              <li>
+                <strong>Clausole Contrattuali Standard (Standard Contractual Clauses - SCC):</strong> approvate dalla Commissione Europea ai sensi dell'art. 46 GDPR, integrate da misure supplementari di cifratura end-to-end e segregazione degli accessi.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 10 -->
+        <!-- ========================================== -->
+        <article id="sec-10" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 10</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">10. Diritti dell'Interessato (Articoli 15-22 GDPR)</h2>
+              <button class="copy-anchor-btn" data-target="sec-10" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              In ogni momento, l'utente ha il pieno diritto di esercitare i diritti riconosciuti dagli articoli 15-22 del Regolamento (UE) 2016/679:
+            </p>
+
+            <div class="definitions-grid">
+              <div class="definition-card">
+                <h3 class="def-term">Diritto di Accesso (Art. 15)</h3>
+                <p class="def-desc">Ottenere conferma che sia o meno in corso un trattamento di dati che lo riguardano e riceverne copia intelligibile.</p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">Diritto di Rettifica (Art. 16)</h3>
+                <p class="def-desc">Ottenere senza ingiustificato ritardo l'aggiornamento, la correzione o l'integrazione dei dati inesatti o incompleti.</p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">Diritto all'Oblio (Art. 17)</h3>
+                <p class="def-desc">Ottenere la cancellazione tempestiva e definitiva dei propri dati personali dai database e dai sistemi di backup.</p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">Limitazione del Trattamento (Art. 18)</h3>
+                <p class="def-desc">Richiedere la sospensione temporanea del trattamento al verificarsi delle ipotesi previste dalla normativa.</p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">Diritto alla Portabilità (Art. 20)</h3>
+                <p class="def-desc">Ricevere i propri dati in formato strutturato, interoperabile e leggibile da dispositivo automatico (JSON).</p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">Diritto di Opposizione (Art. 21)</h3>
+                <p class="def-desc">Opporsi in qualunque momento, per motivi connessi alla propria situazione particolare, al trattamento basato sul legittimo interesse.</p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">Revoca del Consenso</h3>
+                <p class="def-desc">Revocare in qualsiasi momento il consenso accordato (es. posizione GPS) senza pregiudicare la liceità del trattamento pregresso.</p>
+              </div>
+            </div>
+
+            <!-- 10.1 Procedura In-App -->
+            <div class="subsection" style="margin-top: 24px;">
+              <h3 class="subsection-title">10.1. Procedura Diretta In-App per l'Eliminazione dell'Account</h3>
+              <div class="callout callout-gdpr">
+                <div class="callout-icon">⚡</div>
+                <div class="callout-content">
+                  <strong>Funzione di Cancellazione Immediata e Autonoma:</strong><br>
+                  Per garantire la massima effettività al diritto alla cancellazione (Art. 17 GDPR), CosaFare include all'interno dell'applicazione — nella sezione <em>«Profilo»</em> o <em>«Impostazioni»</em> — un pulsante dedicato denominato <strong>«Elimina Account»</strong>.<br>
+                  Premendo tale comando, l'Utente avvia la cancellazione immediata, totale e irreversibile del proprio account da Firebase Auth e l'eliminazione istantanea di tutti i preferiti e record memorizzati.
+                </div>
+              </div>
+            </div>
+
+            <!-- 10.2 Esercizio via email -->
+            <div class="subsection">
+              <h3 class="subsection-title">10.2. Esercizio dei Diritti via Email</h3>
+              <p>
+                Per qualsiasi altra istanza relativa ai propri dati personali, l'interessato può indirizzare una richiesta scritta al Titolare:
+              </p>
+              <p>
+                <strong>Email:</strong> <a href="mailto:tfdlab.info@gmail.com" class="link-styled">tfdlab.info@gmail.com</a><br>
+                Il Titolare risponderà senza ingiustificato ritardo e comunque <strong>entro 30 giorni</strong> dalla ricezione della comunicazione.
+              </p>
+            </div>
+
+            <!-- 10.3 Reclamo al Garante -->
+            <div class="subsection">
+              <h3 class="subsection-title">10.3. Diritto di Reclamo all'Autorità di Controllo</h3>
+              <div class="callout callout-info">
+                <div class="callout-icon">🏛️</div>
+                <div class="callout-content">
+                  Fatto salvo ogni altro ricorso amministrativo o giurisdizionale, qualora l'Utente ritenga che il trattamento violi il GDPR, ha il diritto di proporre reclamo all'<strong>Autorità Garante per la Protezione dei Dati Personali</strong>:
+                  <p style="margin-top: 6px; margin-bottom: 0;">
+                    Piazza Venezia 11, 00187 Roma &bull; Sito web: <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" class="link-styled link-external">www.garanteprivacy.it &nearr;</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 11 -->
+        <!-- ========================================== -->
+        <article id="sec-11" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 11</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">11. Tutela dei Minori</h2>
+              <button class="copy-anchor-btn" data-target="sec-11" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              L'applicazione non è diretta né destinata all'utilizzo da parte di minori di <strong>anni 14</strong>. Non raccogliamo intenzionalmente dati personali di individui che non abbiano raggiunto la soglia di età stabilita dalla legge italiana per il consenso digitale autonomo (art. 2-quinquies D.Lgs. 196/2003).
+            </p>
+            <div class="callout callout-warning">
+              <div class="callout-icon">🧒</div>
+              <div class="callout-content">
+                <strong>Avviso per Genitori ed Esercenti la Responsabilità Genitoriale:</strong><br>
+                Nel caso in cui un genitore o tutore legale apprenda che un minore di anni 14 ha fornito propri dati personali attraverso l'App senza opportuna autorizzazione, è pregato di segnalarlo prontamente all'indirizzo <a href="mailto:tfdlab.info@gmail.com" class="link-styled">tfdlab.info@gmail.com</a>. Il Titolare procederà all'immediata eliminazione dei relativi dati.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 12 -->
+        <!-- ========================================== -->
+        <article id="sec-12" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 12</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">12. Processi Decisionali Automatizzati e Profilazione</h2>
+              <button class="copy-anchor-btn" data-target="sec-12" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              Il Titolare <strong>NON adotta</strong> processi decisionali basati interamente su trattamenti automatizzati né attività di profilazione che producano effetti giuridici sull'interessato o che incidano in modo analogo significativamente sulla sua persona ai sensi dell'art. 22 del GDPR.
+            </p>
+            <div class="callout callout-info">
+              <div class="callout-icon">ℹ️</div>
+              <div class="callout-content">
+                <strong>Filtri di Ordinamento Tecnico:</strong><br>
+                I filtri geografici e di vicinanza chilometrica operano come meri algoritmi tecnici di ordinamento visuale dell'elenco pubblico delle sagre ed eventi territoriali a puro vantaggio informativo dell'utente, senza alcuna valutazione predittiva di abitudini o preferenze commerciali.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 13 -->
+        <!-- ========================================== -->
+        <article id="sec-13" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 13</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">13. Aggiornamenti della Presente Privacy Policy</h2>
+              <button class="copy-anchor-btn" data-target="sec-13" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              Il Titolare si riserva il diritto di modificare o aggiornare la presente Informativa sulla Privacy, anche in conseguenza di mutamenti nel quadro normativo applicabile in materia di protezione dei dati personali o del rilascio di nuove funzionalità nell'applicazione CosaFare.
+            </p>
+            <p>
+              Le eventuali versioni aggiornate saranno pubblicate con indicazione puntuale della data di ultimo aggiornamento e del numero di versione. In presenza di variazioni sostanziali nei trattamenti, gli utenti potranno essere informati tramite opportuno avviso all'interno dell'applicazione o con richiesta di presa visione aggiornata.
+            </p>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SEZIONE 14 -->
+        <!-- ========================================== -->
+        <article id="sec-14" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">Sezione 14</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">14. Contatti del Titolare</h2>
+              <button class="copy-anchor-btn" data-target="sec-14" title="Copia link alla sezione">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>
+              Per qualunque domanda, chiarimento o per l'esercizio dei diritti garantiti dal GDPR, è possibile contattare il Titolare attraverso i seguenti canali:
+            </p>
+
+            <div class="contact-channels-grid">
+              <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h4>Email Supporto Privacy</h4>
+                <p>Canale prioritario per esercizio diritti e richieste di informazioni.</p>
+                <a href="mailto:tfdlab.info@gmail.com" class="contact-action-link">tfdlab.info@gmail.com</a>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h4>Sede Territoriale</h4>
+                <p>Ubicazione del referente di progetto per comunicazioni formali.</p>
+                <address class="contact-address">Cascina, Pisa, Italia</address>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">📱</div>
+                <h4>Canale Diretto In-App</h4>
+                <p>Funzione di cancellazione autonoma account e supporto integrato.</p>
+                <span class="contact-inapp">Sezione Profilo / Impostazioni in CosaFare</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Conclusione Documento -->
+        <div class="doc-closure">
+          <div class="closure-badge">Fine del Documento</div>
+          <p class="closure-text">
+            La presente Privacy Policy rappresenta l'impegno costante di CosaFare e TFDLab per una gestione trasparente, sicura e conforme dei tuoi dati personali.
+          </p>
+          <div class="closure-actions">
+            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="btn-secondary">
+              &uarr; Torna all'inizio
+            </button>
+            <button onclick="window.print()" class="btn-primary">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              Stampa o Salva PDF
+            </button>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Toast Notifica Copia Link -->
+  <div id="toastNotification" class="toast-toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span id="toastMessage">Link copiato negli appunti!</span>
+  </div>
+
+  <!-- Pulsante Galleggiante Torna in Cima -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Torna all'inizio della pagina" title="Torna su">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Footer del Sito -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">CosaFare</span>
+        <p class="footer-desc">
+          L'applicazione dedicata a sagre, feste tradizionali ed eventi culturali nella Regione Toscana.
+        </p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-title">Riferimenti Privacy</span>
+        <ul>
+          <li><a href="#sec-1">Titolare del Trattamento</a></li>
+          <li><a href="#sec-3">Dati Raccolti & GPS</a></li>
+          <li><a href="#sec-4">Basi Giuridiche GDPR</a></li>
+          <li><a href="#sec-10">Diritti & Eliminazione In-App</a></li>
+          <li><a href="#sec-14">Contatti & Supporto</a></li>
+          <li><a href="../TerminiCondizioni/index.html">Termini e Condizioni</a></li>
+        </ul>
+      </div>
+      <div class="footer-meta">
+        <span class="footer-title">Informazioni Legali</span>
+        <p>&copy; 2026 CosaFare &bull; Sviluppato da TFDLab</p>
+        <p>Tutti i diritti riservati &bull; Cascina (PI), Italia</p>
+        <p class="footer-note">Applicazione mobile per Android e sistemi supportati.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
