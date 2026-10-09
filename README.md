@@ -1,6 +1,6 @@
-# CosaFare — Informativa sulla Privacy (Sito Web)
+# Rook — Informativa sulla Privacy (Sito Web)
 
-Sito web statico, moderno e reattivo, realizzato per la consultazione e pubblicazione online dell'**Informativa sul Trattamento dei Dati Personali (Privacy Policy)** dell'applicazione mobile e piattaforma **CosaFare** (Eventi, Sagre e Tradizioni in Toscana), pienamente conforme al **Regolamento (UE) 2016/679 (GDPR)**.
+Sito web statico, moderno e reattivo, realizzato per la consultazione e pubblicazione online dell'**Informativa sul Trattamento dei Dati Personali (Privacy Policy)** dell'applicazione mobile e piattaforma **Rook — Eventi in Toscana** (Package: `it.rookapp.eventi`, in precedenza nota come *CosaFare*), pienamente conforme al **Regolamento (UE) 2016/679 (GDPR)**.
 
 ---
 

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Informativa Privacy — CosaFare</title>
-  <meta name="description" content="Informativa sul trattamento dei dati personali (Privacy Policy) dell'applicazione CosaFare - Guida ad eventi, sagre e manifestazioni in Toscana ai sensi del Regolamento UE 2016/679 (GDPR).">
+  <title>Informativa Privacy — Rook</title>
+  <meta name="description" content="Informativa sul trattamento dei dati personali (Privacy Policy) dell'applicazione mobile Rook - Eventi in Toscana (it.rookapp.eventi) ai sensi del Regolamento UE 2016/679 (GDPR).">
   <meta name="theme-color" content="#c84b31">
 
-  <!-- Favicon SVG Identitaria Toscana -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23c84b31'/><path d='M16 6C11.58 6 8 9.58 8 14c0 6 8 12 8 12s8-6 8-12c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z' fill='white'/></svg>">
+  <!-- Favicon SVG Identitaria Rook / Toscana -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23c84b31'/><path d='M10 8h12v4l-2 2v6h2v4H8v-4h2v-6l-2-2V8h2zm3 3v2h2v-2h-2zm4 0v2h2v-2h-2z' fill='white'/></svg>">
 
   <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,13 +33,13 @@
             </svg>
           </span>
           <div class="brand-text">
-            <span class="brand-name">CosaFare</span>
+            <span class="brand-name">Rook</span>
             <span class="brand-tagline">Eventi & Tradizioni in Toscana</span>
           </div>
         </a>
         <div class="header-badges">
-          <span class="badge badge-version">v1.1</span>
-          <span class="badge badge-date">03 Ottobre 2026</span>
+          <span class="badge badge-version">v1.2</span>
+          <span class="badge badge-date">09 Ottobre 2026</span>
         </div>
       </div>
 
@@ -51,7 +51,7 @@
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <input type="text" id="searchInput" placeholder="Cerca clausole (es. GPS, Google, cancellazione, diritti)..." aria-label="Cerca nell'informativa privacy">
+          <input type="text" id="searchInput" placeholder="Cerca clausole (es. GPS, notifiche, keyword, recensioni)..." aria-label="Cerca nell'informativa privacy">
           <button id="clearSearchBtn" class="clear-search-btn" aria-label="Cancella ricerca" hidden>&times;</button>
           <span class="search-shortcut" title="Premi / o Ctrl+K per cercare">/</span>
         </div>
@@ -120,29 +120,34 @@
         </div>
         <h1 class="hero-title">Informativa sul Trattamento dei Dati Personali</h1>
         <p class="hero-subtitle">
-          Informativa resa ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 («GDPR») e della normativa italiana vigente per l'applicazione mobile e la piattaforma <strong>CosaFare</strong>.
+          Informativa resa ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 («GDPR») e della normativa italiana vigente per l'applicazione mobile <strong>Rook — Eventi in Toscana</strong> (Application ID: <code>it.rookapp.eventi</code>).
         </p>
 
         <!-- Informazioni Metadati -->
         <div class="meta-strip">
           <div class="meta-item">
             <span class="meta-label">Ultimo aggiornamento</span>
-            <span class="meta-value">03 Ottobre 2026</span>
+            <span class="meta-value">09 Ottobre 2026</span>
           </div>
           <div class="meta-divider"></div>
           <div class="meta-item">
             <span class="meta-label">Versione documento</span>
-            <span class="meta-value">v1.1</span>
+            <span class="meta-value">v1.2</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label">ID Pacchetto Android</span>
+            <span class="meta-value"><code>it.rookapp.eventi</code></span>
           </div>
           <div class="meta-divider"></div>
           <div class="meta-item">
             <span class="meta-label">Titolare / Sviluppo</span>
-            <span class="meta-value">Progetto CosaFare &bull; TFDLab</span>
+            <span class="meta-value">Progetto Rook &bull; TFDLab</span>
           </div>
           <div class="meta-divider"></div>
           <div class="meta-item">
             <span class="meta-label">Tempo di lettura</span>
-            <span class="meta-value" id="readTimeEstimate">~7 minuti</span>
+            <span class="meta-value" id="readTimeEstimate">~8 minuti</span>
           </div>
         </div>
 
@@ -152,28 +157,42 @@
             <div class="point-icon">🛡️</div>
             <div class="point-body">
               <h3>Conformità GDPR</h3>
-              <p>Trattamento fondato su trasparenza, correttezza, liceità e rigorosa minimizzazione dei dati (Reg. UE 2016/679).</p>
+              <p>Trattamento fondato su trasparenza, correttezza, liceità e rigorosa minimizzazione dei dati personali (Reg. UE 2016/679).</p>
             </div>
           </div>
           <div class="point-card">
             <div class="point-icon">🔑</div>
             <div class="point-body">
-              <h3>Google Sign-In & Ospite</h3>
-              <p>Naviga in modalità anonima come Ospite o accedi con Google per memorizzare i tuoi preferiti.</p>
+              <h3>Google Sign-In & Email</h3>
+              <p>Naviga in anonimato come Ospite oppure accedi con Google o Email/Password protette da crittografia sicura.</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">🔔</div>
+            <div class="point-body">
+              <h3>Notifiche & Keyword Alert</h3>
+              <p>Ricevi avvisi personalizzati su categorie e parole chiave da te scelte tramite Firebase Cloud Messaging.</p>
             </div>
           </div>
           <div class="point-card">
             <div class="point-icon">📍</div>
             <div class="point-body">
               <h3>GPS Trasparente & Zero Storico</h3>
-              <p>La geolocalizzazione serve solo a calcolare la vicinanza agli eventi. Nessun tracciamento in background né archivio storico.</p>
+              <p>La geolocalizzazione calcola istantaneamente la vicinanza agli eventi. Nessun tracciamento in background né archivio storico.</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">💬</div>
+            <div class="point-body">
+              <h3>Recensioni & Chat Protetta</h3>
+              <p>Condividi opinioni sugli eventi o contatta gli organizzatori in sicurezza, con piena facoltà di cancellare ogni commento.</p>
             </div>
           </div>
           <div class="point-card">
             <div class="point-icon">🗑️</div>
             <div class="point-body">
               <h3>Eliminazione Account In-App</h3>
-              <p>Diritto alla cancellazione immediato ed autonomo direttamente dalla sezione Profilo dell'applicazione.</p>
+              <p>Diritto all'oblio immediato e autonomo direttamente dalla sezione Profilo dell'applicazione in un solo tocco.</p>
             </div>
           </div>
         </div>
@@ -234,10 +253,10 @@
             <strong>Premessa Normativa & Inquadramento Giuridico:</strong><br>
             La presente informativa sul trattamento dei dati personali (di seguito, <strong>«Privacy Policy»</strong>) è resa ai sensi degli articoli 13 e 14 del Regolamento (UE) 2016/679 del Parlamento Europeo e del Consiglio del 27 aprile 2016 (<strong>«General Data Protection Regulation»</strong> o <strong>«GDPR»</strong>), del D.Lgs. 196/2003 (Codice in materia di protezione dei dati personali) e successive modifiche e integrazioni (D.Lgs. 101/2018).
             <p style="margin-top: 8px; margin-bottom: 0;">
-              Il presente documento descrive le modalità, le finalità e le garanzie con cui vengono raccolti, trattati e conservati i dati personali degli utenti che accedono, navigano o interagiscono con l'applicazione mobile <strong>"CosaFare"</strong> e i servizi cloud a essa collegati.
+              Il presente documento descrive le modalità, le finalità e le garanzie con cui vengono raccolti, trattati e conservati i dati personali degli utenti che accedono, navigano o interagiscono con l'applicazione mobile <strong>"Rook"</strong> (distribuita su Google Play Store con l'identificativo pacchetto <code>it.rookapp.eventi</code>, originariamente concepita in fase di prototipo come <em>"CosaFare"</em>) e i servizi cloud e backend a essa collegati.
             </p>
             <p style="margin-top: 8px; margin-bottom: 0; font-size: 0.875rem;">
-              <strong>Documento correlato:</strong> <a href="../TerminiCondizioni/index.html" class="link-styled">Termini e Condizioni di Utilizzo di CosaFare &rarr;</a>
+              <strong>Documento correlato:</strong> <a href="../TerminiCondizioni/index.html" class="link-styled">Termini e Condizioni di Utilizzo di Rook &rarr;</a>
             </p>
           </div>
         </div>
@@ -261,7 +280,7 @@
 
           <div class="section-content">
             <p>
-              Il Titolare del trattamento dei dati personali relativi all'applicazione mobile <strong>"CosaFare"</strong> e all'infrastruttura di supporto è:
+              Il Titolare del trattamento dei dati personali relativi all'applicazione mobile <strong>"Rook"</strong> e all'infrastruttura di supporto è:
             </p>
 
             <div class="operator-card">
@@ -269,7 +288,11 @@
               <ul class="operator-details">
                 <li>
                   <span class="detail-label">Titolare del Progetto:</span>
-                  <span class="detail-value"><strong>CosaFare</strong></span>
+                  <span class="detail-value"><strong>Rook</strong> (progetto sviluppato originariamente come <em>CosaFare</em>)</span>
+                </li>
+                <li>
+                  <span class="detail-label">Application ID Ufficiale:</span>
+                  <span class="detail-value"><code>it.rookapp.eventi</code></span>
                 </li>
                 <li>
                   <span class="detail-label">Sviluppatore / Referente:</span>
@@ -287,7 +310,7 @@
             </div>
 
             <p>
-              Ove nel prosieguo del presente documento si utilizzi il termine <em>«Titolare»</em>, <em>«noi»</em>, o <em>«CosaFare»</em>, ci si riferisce al soggetto sopra indicato quale responsabile delle determinazioni in ordine alle finalità e ai mezzi del trattamento dei dati personali.
+              Ove nel prosieguo del presente documento si utilizzi il termine <em>«Titolare»</em>, <em>«noi»</em>, o <em>«Rook»</em>, ci si riferisce al soggetto sopra indicato quale responsabile delle determinazioni in ordine alle finalità e ai mezzi del trattamento dei dati personali.
             </p>
           </div>
         </article>
@@ -311,7 +334,7 @@
 
           <div class="section-content">
             <p>
-              La presente Privacy Policy si applica a chiunque utilizzi i servizi di CosaFare, e specificamente a:
+              La presente Privacy Policy si applica a chiunque utilizzi i servizi di Rook, e specificamente a:
             </p>
 
             <div class="scope-cards-list">
@@ -327,21 +350,21 @@
                 <span class="scope-badge">2</span>
                 <div>
                   <strong>Utenti Registrati</strong>
-                  <p>Coloro che accedono all'App autenticandosi tramite il servizio federato Google Sign-In per salvare e sincronizzare in cloud i propri eventi preferiti.</p>
+                  <p>Coloro che accedono all'App autenticandosi tramite <strong>Google Sign-In</strong> o con <strong>Email e Password</strong> per salvare e sincronizzare preferiti, personalizzare gli alert delle notifiche, rilasciare recensioni o chattare con gli organizzatori.</p>
                 </div>
               </div>
 
               <div class="scope-item">
                 <span class="scope-badge">3</span>
                 <div>
-                  <strong>Organizzatori e Referenti</strong>
-                  <p>Persone fisiche o incaricati di enti pubblici, Pro Loco, comitati e associazioni territoriali che trasmettono informazioni, locandine e recapiti di contatto relativi a eventi, sagre e manifestazioni in Toscana.</p>
+                  <strong>Organizzatori e Referenti di Enti</strong>
+                  <p>Persone fisiche o incaricati di enti pubblici, Pro Loco, comitati e associazioni territoriali che pubblicano eventi, gestiscono collaborazioni tra organizzatori, rispondono alle chat dei visitatori o attivano promozioni di visibilità (Booster).</p>
                 </div>
               </div>
             </div>
 
             <p style="margin-top: 18px;">
-              L'applicazione è progettata e orientata al territorio della <strong>Regione Toscana</strong> ed è distribuita ufficialmente tramite <strong>Google Play Store</strong> (nonché eventuali futuri store applicativi compatibili):
+              L'applicazione è progettata e orientata al territorio della <strong>Regione Toscana</strong> ed è distribuita ufficialmente tramite <strong>Google Play Store</strong> (Package: <code>it.rookapp.eventi</code>):
             </p>
 
             <div class="provinces-pills">
@@ -378,30 +401,31 @@
 
           <div class="section-content">
             <p>
-              A seconda della modalità di interazione dell'utente con l'App, CosaFare può raccogliere e trattare le seguenti tipologie di dati personali:
+              A seconda della modalità di interazione dell'utente con l'App, Rook può raccogliere e trattare le seguenti tipologie di dati personali:
             </p>
 
             <!-- 3.1 Dati Account -->
             <div class="subsection">
               <h3 class="subsection-title">3.1. Dati di autenticazione e di account (Utenti Registrati)</h3>
               <p>
-                L'App non gestisce né memorizza password dirette sui propri server o in locale, bensì si avvale del protocollo di autenticazione federata sicura <strong>Google Sign-In</strong> gestito tramite l'infrastruttura Firebase Authentication. In fase di accesso con account Google vengono acquisiti:
+                L'applicazione consente l'accesso sicuro mediante l'infrastruttura certificata di Firebase Authentication secondo due opzioni:
               </p>
               <ul class="styled-list">
-                <li><strong>Identificativo univoco utente (Firebase UID):</strong> codice alfanumerico univoco per associare i preferiti dell'utente in sicurezza;</li>
-                <li><strong>Indirizzo di posta elettronica (email):</strong> associato all'account Google utilizzato;</li>
-                <li><strong>Nome e Cognome:</strong> nome anagrafico o nickname associato al profilo Google;</li>
-                <li><strong>Immagine del profilo (URL avatar):</strong> link alla foto profilo pubblica fornita da Google, ove disponibile.</li>
+                <li><strong>Accesso tramite Google Sign-In (Credential Manager):</strong> vengono acquisiti l'identificativo univoco alfanumerico (Firebase UID), l'indirizzo di posta elettronica associato all'account Google, il nome/cognome e l'URL dell'immagine avatar pubblica;</li>
+                <li><strong>Accesso con Email e Password:</strong> vengono acquisiti l'indirizzo email e la password, quest'ultima protetta da hashing crittografico asimmetrico gestito direttamente da Firebase Authentication. Il Titolare non visualizza né memorizza mai le password in chiaro;</li>
+                <li><strong>Profilo e Dati Visualizzati:</strong> nome anagrafico o nickname pubblico, eventuale denominazione dell'ente e stato di verifica del profilo.</li>
               </ul>
             </div>
 
-            <!-- 3.2 Dati Preferenze -->
+            <!-- 3.2 Dati Preferenze & Notifiche Keyword -->
             <div class="subsection">
-              <h3 class="subsection-title">3.2. Dati relativi alle preferenze e all'utilizzo dell'App</h3>
+              <h3 class="subsection-title">3.2. Preferenze, Interessi e Avvisi su Misura (Keyword Alert)</h3>
               <ul class="styled-list">
-                <li><strong>Elenco degli Eventi nei "Preferiti":</strong> identificativi degli eventi salvati dall'Utente Registrato nel proprio profilo cloud;</li>
-                <li><strong>Preferenze e filtri di navigazione:</strong> criteri impostati dall'utente (es. province toscane selezionate, categorie come sagre, rassegne enogastronomiche, festival musicali, eventi culturali, fiere e mercatini);</li>
-                <li><strong>Stato del consenso e accettazione termini:</strong> memorizzato in locale sul dispositivo dell'Utente (es. data e versione accettata dei Termini e Condizioni e della presente Privacy Policy).</li>
+                <li><strong>Elenco Eventi nei "Preferiti":</strong> identificativi degli eventi salvati nel proprio account;</li>
+                <li><strong>Organizzatori Seguiti:</strong> elenco degli enti e associazioni seguiti per visualizzarne gli aggiornamenti;</li>
+                <li><strong>Categorie di Notifica Selezionate:</strong> preferenze espresse dall'utente (es. Sagre, Concerti, Arte, Folklore);</li>
+                <li><strong>Parole Chiave Personalizzate (Keyword Alert):</strong> termini arbitrari inseriti direttamente dall'utente (es. nomi di artisti, sagre specifiche, prodotti tipici come tartufo o castagna, opzioni gluten-free) per ricevere notifiche push automatiche appena un evento corrispondente viene pubblicato;</li>
+                <li><strong>Stato del Consenso e Impostazioni:</strong> configurazioni salvate localmente e su cloud nel profilo utente.</li>
               </ul>
             </div>
 
@@ -409,7 +433,7 @@
             <div class="subsection">
               <h3 class="subsection-title">3.3. Dati di geolocalizzazione (Posizione GPS)</h3>
               <p>
-                CosaFare può rilevare la <strong>posizione geografica in tempo reale</strong> (coordinate di latitudine e longitudine del dispositivo mobile).
+                Rook può rilevare la <strong>posizione geografica in tempo reale</strong> (coordinate di latitudine e longitudine del dispositivo mobile).
               </p>
               <p>
                 <strong>Modalità di acquisizione e massima trasparenza:</strong><br>
@@ -432,27 +456,48 @@
               </div>
             </div>
 
-            <!-- 3.4 Dati Organizzatori -->
+            <!-- 3.4 Contenuti Generati dall'Utente (Recensioni, Chat e Segnalazioni) -->
             <div class="subsection">
-              <h3 class="subsection-title">3.4. Dati degli Organizzatori e contenuti degli Eventi</h3>
-              <p>
-                Per gli Organizzatori e referenti che comunicano, inoltrano o caricano informazioni sulle manifestazioni:
-              </p>
+              <h3 class="subsection-title">3.4. Contenuti Generati dall'Utente (Recensioni, Chat e Segnalazioni)</h3>
               <ul class="styled-list">
-                <li><strong>Dati identificativi:</strong> denominazione dell'ente organizzatore, associazione, Pro Loco o comitato promotore;</li>
-                <li><strong>Recapiti pubblici di contatto:</strong> indirizzo email di riferimento per il pubblico, recapiti telefonici per prenotazioni tavoli/eventi, link ai siti web ufficiali o canali social;</li>
-                <li><strong>Materiale descrittivo e multimediale:</strong> fotografie, locandine promozionali, programmi di svolgimento, menù gastronomici, indicazioni per celiaci o allergeni e listini prezzi al pubblico.</li>
+                <li><strong>Recensioni ed Esperienze Pubbliche:</strong> voto in stelle (da 1 a 5), testo del commento, timestamp di pubblicazione e nome o nickname dell'utente associato al proprio UID. Ciascun utente ha il pieno controllo per modificare o eliminare in ogni momento la propria recensione direttamente dalla scheda dell'evento;</li>
+                <li><strong>Messaggi di Chat In-App:</strong> comunicazioni testuali scambiate in tempo reale tra visitatori e organizzatori di eventi tramite canali Firebase Realtime Database dedicati, necessari per richiedere informazioni sullo svolgimento delle manifestazioni;</li>
+                <li><strong>Segnalazioni di Eventi:</strong> indirizzo email fornito dal segnalatore, motivazione e descrizione dettagliata per consentire la moderazione di contenuti inesatti o non conformi.</li>
               </ul>
             </div>
 
-            <!-- 3.5 Dati Tecnici -->
+            <!-- 3.5 Dati Notifiche Push (FCM) -->
             <div class="subsection">
-              <h3 class="subsection-title">3.5. Dati tecnici, di log e di diagnostica</h3>
+              <h3 class="subsection-title">3.5. Dati per le Notifiche Push (Firebase Cloud Messaging - FCM)</h3>
+              <p>
+                Qualora l'utente autorizzi l'invio delle notifiche push (permesso di sistema operativo Android 13+ <code>POST_NOTIFICATIONS</code>), viene generato un <strong>Token di registrazione univoco del dispositivo (FCM Token)</strong>.<br>
+                Tale token consente ai server Firebase Cloud Functions di recapitare notifiche push relative ai topic scelti (categorie di eventi) o alle parole chiave monitorate, senza tracciare la navigazione web esterna dell'utente.
+              </p>
+            </div>
+
+            <!-- 3.6 Dati Organizzatori & Booster -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.6. Dati degli Organizzatori, Eventi e Booster di Visibilità</h3>
+              <p>
+                Per gli Organizzatori e referenti che caricano contenuti sulle manifestazioni:
+              </p>
+              <ul class="styled-list">
+                <li><strong>Dati identificativi:</strong> denominazione dell'ente organizzatore, associazione, Pro Loco o comitato promotore;</li>
+                <li><strong>Recapiti pubblici di contatto:</strong> indirizzo email di riferimento per il pubblico, recapiti telefonici per informazioni/prenotazioni, link ai siti web ufficiali o canali social;</li>
+                <li><strong>Materiale descrittivo e multimediale:</strong> fotografie di copertina, locandine promozionali, date, orari, programmi di svolgimento, menù gastronomici e listini prezzi;</li>
+                <li><strong>Booster di Visibilità:</strong> richiesta di piani promozionali (24h, 48h, 7 giorni) con memorizzazione della data di scadenza del boost per l'ordinamento in evidenza;</li>
+                <li><strong>Collaborazioni tra Enti:</strong> dati di coordinamento tra co-organizzatori per la gestione congiunta dell'evento.</li>
+              </ul>
+            </div>
+
+            <!-- 3.7 Dati Tecnici -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.7. Dati tecnici, di log e di diagnostica</h3>
               <ul class="styled-list">
                 <li><strong>Indirizzo IP:</strong> acquisito transitoriamente per l'istradamento delle richieste di rete via HTTPS;</li>
-                <li><strong>Informazioni sul dispositivo:</strong> marca, modello di dispositivo, versione del sistema operativo (es. versione Android);</li>
+                <li><strong>Informazioni sul dispositivo:</strong> marca, modello di dispositivo, versione del sistema operativo Android;</li>
                 <li><strong>Timestamp e log di rete:</strong> registrazioni temporali delle chiamate verso i database cloud Firebase;</li>
-                <li><strong>Log di diagnostica ed errori:</strong> tracciamento di crash o anomalie tecniche, impiegato in forma aggregata al solo fine di mantenere l'app stabile, fluida e sicura.</li>
+                <li><strong>Log di diagnostica ed errori:</strong> tracciamento di crash o anomalie tecniche in forma aggregata al solo fine di mantenere l'app stabile e sicura.</li>
               </ul>
             </div>
           </div>
@@ -485,9 +530,9 @@
               <div class="feature-box">
                 <div class="feature-num">01</div>
                 <div class="feature-main">
-                  <h4>Erogazione dei Servizi Richiesti e Gestione dell'App</h4>
+                  <h4>Erogazione dei Servizi dell'App e Funzionalità Principali</h4>
                   <p>
-                    Consentire la consultazione del catalogo eventi toscani, la ricerca per filtri tematici o provinciali, la visualizzazione di schede dettagliate, locandine e menù gastronomici, la gestione e sincronizzazione della lista "Preferiti" per gli utenti registrati, il rendering delle mappe e l'avvio della navigazione guidata verso la sede della sagra.
+                    Consentire la consultazione del catalogo eventi in Toscana, la ricerca per categorie e filtri temporali, la sincronizzazione dei Preferiti, la pubblicazione di recensioni e valutazioni, la chat con gli organizzatori, l'esplorazione del calendario e la visualizzazione su mappa.
                   </p>
                   <span class="rule-badge">Art. 6, par. 1, lett. b, GDPR — Esecuzione del Contratto</span>
                 </div>
@@ -512,17 +557,32 @@
               <div class="feature-box">
                 <div class="feature-num">03</div>
                 <div class="feature-main">
-                  <h4>Sicurezza Informatica, Monitoraggio e Prevenzione Abusi</h4>
+                  <h4>Notifiche Push e Avvisi su Misura (Categorie & Keyword Alert)</h4>
                   <p>
-                    Proteggere l'integrità delle API e dei database cloud Firebase, prevenire accessi non autorizzati o fraudolenti, mitigare tentativi di attacco DDoS o spam, e garantire la resilienza tecnica dell'infrastruttura.
+                    Inviare notifiche push automatiche sui nuovi eventi pubblicati conformi alle categorie selezionate o contenenti le parole chiave personalizzate indicate dall'utente.
                   </p>
-                  <span class="rule-badge rule-badge-purple">Art. 6, par. 1, lett. f, GDPR — Legittimo Interesse</span>
+                  <span class="rule-badge rule-badge-success">Art. 6, par. 1, lett. a, GDPR — Consenso Espresso</span>
+                  <p style="font-size: 0.8125rem; color: var(--text-light); margin-top: 6px; margin-bottom: 0 !important;">
+                    L'utente può abilitare o disabilitare le notifiche e personalizzare le keyword in qualsiasi momento dalla sezione Notifiche nel Profilo.
+                  </p>
                 </div>
               </div>
 
               <!-- Finalità 4 -->
               <div class="feature-box">
                 <div class="feature-num">04</div>
+                <div class="feature-main">
+                  <h4>Sicurezza Informatica, Moderazione e Prevenzione Abusi</h4>
+                  <p>
+                    Proteggere l'integrità delle API e dei database Firebase, prevenire accessi non autorizzati o fraudolenti, mitigare tentativi di spam o condotte scorrette e verificare le segnalazioni ricevute su eventi non conformi.
+                  </p>
+                  <span class="rule-badge rule-badge-purple">Art. 6, par. 1, lett. f, GDPR — Legittimo Interesse</span>
+                </div>
+              </div>
+
+              <!-- Finalità 5 -->
+              <div class="feature-box">
+                <div class="feature-num">05</div>
                 <div class="feature-main">
                   <h4>Adempimento di Obblighi Legali e Difesa dei Diritti</h4>
                   <p>
@@ -568,7 +628,7 @@
               <div class="rule-row">
                 <span class="rule-badge">Facoltativo / Account</span>
                 <div class="rule-text">
-                  <strong>Autenticazione con Google Sign-In:</strong> l'accesso con account Google è del tutto facoltativo. L'utente può navigare liberamente come <em>«Ospite»</em>. La mancata autenticazione preclude esclusivamente la sincronizzazione dei Preferiti tra dispositivi o dopo la reinstallazione.
+                  <strong>Autenticazione con Google o Email/Password:</strong> l'accesso è del tutto facoltativo. L'utente può navigare liberamente come <em>«Ospite»</em>. La mancata registrazione preclude unicamente la sincronizzazione dei Preferiti, l'uso della chat, la pubblicazione di recensioni e gli alert personalizzati.
                 </div>
               </div>
 
@@ -576,6 +636,13 @@
                 <span class="rule-badge rule-badge-success">Facoltativo / GPS</span>
                 <div class="rule-text">
                   <strong>Permesso di geolocalizzazione (GPS):</strong> l'accesso alla posizione geografica è facoltativo. L'eventuale rifiuto impedisce unicamente il calcolo automatico della distanza e l'ordinamento dinamico per vicinanza, ma non impedisce la normale consultazione manuale di tutte le province toscane e la visione degli eventi sulla mappa.
+                </div>
+              </div>
+
+              <div class="rule-row">
+                <span class="rule-badge rule-badge-success">Facoltativo / Notifiche</span>
+                <div class="rule-text">
+                  <strong>Permesso Notifiche Push & Keyword Alert:</strong> facoltativo. Il diniego del permesso impedisce unicamente la ricezione degli avvisi su nuovi eventi in tempo reale, lasciando inalterate tutte le restanti funzionalità dell'app.
                 </div>
               </div>
             </div>
@@ -615,7 +682,12 @@
 
               <div class="definition-card">
                 <h3 class="def-term">🛡️ Firebase Security Rules</h3>
-                <p class="def-desc">Regole di sicurezza server-side granulari che garantiscono la segregazione dei dati: ciascun utente autenticato può accedere ed alterare unicamente i propri preferiti e dati associati al proprio UID.</p>
+                <p class="def-desc">Regole di sicurezza server-side granulari che garantiscono la segregazione dei dati: ciascun utente autenticato può accedere ed alterare unicamente i propri preferiti, recensioni e impostazioni associate al proprio UID.</p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">🤖 Traduzioni On-Device (Google ML Kit)</h3>
+                <p class="def-desc">Le traduzioni in tempo reale (Italiano, Inglese, Tedesco) vengono eseguite tramite modelli locali on-device scaricati sullo smartphone, garantendo che i testi consultati non vengano inviati a server di profilazione terzi.</p>
               </div>
 
               <div class="definition-card">
@@ -651,9 +723,25 @@
             <div class="jurisdiction-box">
               <div class="jurisdiction-card">
                 <div class="card-icon">👤</div>
-                <h4>Account Utente e Preferiti</h4>
+                <h4>Account Utente, Preferiti e Keyword</h4>
                 <p>
-                  I dati del profilo e la lista dei preferiti sono conservati per l'intera durata di attività dell'account. In caso di inattività prolungata e continuativa per oltre <strong>24 mesi</strong>, il Titolare si riserva la facoltà di cancellare l'account, oppure all'atto della richiesta diretta di cancellazione avanzata dall'utente.
+                  I dati del profilo, la lista dei preferiti e le keyword salvate sono conservati per l'intera durata di attività dell'account, o fino alla cancellazione autonoma eseguita dall'utente. In caso di inattività continuativa per oltre <strong>24 mesi</strong>, l'account potrà essere eliminato.
+                </p>
+              </div>
+
+              <div class="jurisdiction-card">
+                <div class="card-icon">⭐</div>
+                <h4>Recensioni e Valutazioni</h4>
+                <p>
+                  Le recensioni rimangono visibili nella scheda dell'evento fino alla cancellazione o modifica autonoma da parte dell'autore dall'app, o fino all'eliminazione dell'account o dell'evento stesso.
+                </p>
+              </div>
+
+              <div class="jurisdiction-card">
+                <div class="card-icon">💬</div>
+                <h4>Messaggi di Chat In-App</h4>
+                <p>
+                  I messaggi scambiati tra utenti e organizzatori sono conservati per la durata della manifestazione e del riscontro informativo, e possono essere rimossi su richiesta delle parti o a conclusione del ciclo dell'evento.
                 </p>
               </div>
 
@@ -666,18 +754,18 @@
               </div>
 
               <div class="jurisdiction-card">
-                <div class="card-icon">📋</div>
-                <h4>Log Tecnici e di Diagnostica</h4>
+                <div class="card-icon">🔔</div>
+                <h4>Token Notifiche Push (FCM)</h4>
                 <p>
-                  I log tecnici di connessione e gli indirizzi IP sono conservati per una durata massima di <strong>12 mesi</strong> a fini di sicurezza, salvo necessità di accertamento di reati da parte dell'Autorità Giudiziaria.
+                  Il token del dispositivo è conservato fino alla disattivazione delle notifiche, revoca del permesso di sistema o disinstallazione dell'applicazione.
                 </p>
               </div>
 
               <div class="jurisdiction-card">
-                <div class="card-icon">🎪</div>
-                <h4>Dati Eventi e Recapiti Organizzatori</h4>
+                <div class="card-icon">📋</div>
+                <h4>Log Tecnici e di Diagnostica</h4>
                 <p>
-                  I dati descrittivi delle sagre e i recapiti pubblici degli organizzatori vengono conservati per la durata della manifestazione e archiviati o rimossi al termine della stagione o del ciclo annuale di riferimento.
+                  I log tecnici di connessione e gli indirizzi IP sono conservati per una durata massima di <strong>12 mesi</strong> a fini di sicurezza informatica.
                 </p>
               </div>
             </div>
@@ -710,7 +798,7 @@
               <div class="definition-card">
                 <h3 class="def-term">1. Google Firebase (Google Ireland Ltd / Google LLC)</h3>
                 <p class="def-desc">
-                  <strong>Finalità:</strong> Backend as a Service, autenticazione federata (Firebase Auth), database NoSQL real-time e storage distribuito per locandine e immagini.<br>
+                  <strong>Finalità:</strong> Backend as a Service, autenticazione federata (Firebase Auth), Realtime Database, Cloud Storage per immagini, Cloud Functions e invio notifiche push (FCM).<br>
                   <strong>Sede:</strong> Dublino, Irlanda / Mountain View, USA.<br>
                   <strong>Informativa:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer" class="link-styled link-external">firebase.google.com/support/privacy &nearr;</a>
                 </p>
@@ -726,9 +814,16 @@
               </div>
 
               <div class="definition-card">
-                <h3 class="def-term">3. Navigatori di Sistema (via Intent Esterno)</h3>
+                <h3 class="def-term">3. Google ML Kit Translate (Google LLC)</h3>
                 <p class="def-desc">
-                  <strong>Finalità:</strong> Quando l'utente preme sul pulsante "Avvia Navigazione", l'app invia le coordinate della sagra all'app di mappe installata sullo smartphone (Google Maps, Waze, Apple Maps). Da tale momento la navigazione è disciplinata dalle policy dell'app terza prescelta.
+                  <strong>Finalità:</strong> Traduzione dinamica multilingua on-device dei contenuti (i modelli linguistici operano in locale senza inviare il testo dei visitatori a server esterni).
+                </p>
+              </div>
+
+              <div class="definition-card">
+                <h3 class="def-term">4. Navigatori di Sistema (via Intent Esterno)</h3>
+                <p class="def-desc">
+                  <strong>Finalità:</strong> Quando l'utente preme sul pulsante "Portami Qui", l'app inoltra le coordinate della manifestazione all'app di navigazione installata sullo smartphone (Google Maps, Waze, Apple Maps). Da tale momento il trattamento è regolato dalle policy del navigatore terzo prescelto.
                 </p>
               </div>
             </div>
@@ -736,8 +831,8 @@
             <div class="callout callout-tip" style="margin-top: 20px;">
               <div class="callout-icon">✨</div>
               <div class="callout-content">
-                <strong>DIVIETO DI COMMERCIALIZZAZIONE DEI DATI:</strong><br>
-                Nessun dato personale raccolto da CosaFare viene venduto, ceduto, concesso in licenza o commercializzato a intermediari terzi per finalità pubblicitarie, di marketing o di profilazione commerciale.
+                <strong>DIVIETO ASSOLUTO DI COMMERCIALIZZAZIONE DEI DATI:</strong><br>
+                Nessun dato personale raccolto da Rook viene venduto, ceduto, concesso in licenza o commercializzato a intermediari terzi per finalità pubblicitarie, di direct marketing o di profilazione commerciale.
               </div>
             </div>
           </div>
@@ -762,7 +857,7 @@
 
           <div class="section-content">
             <p>
-              L'infrastruttura Google Cloud / Firebase impiegata da CosaFare alloca i propri database prioritariamente all'interno dell'Unione Europea (Spazio Economico Europeo - SEE). Tuttavia, la natura globale dei servizi cloud forniti da Google LLC può comportare il transito o l'accesso a dati da server situati negli Stati Uniti d'America o in altri Paesi terzi.
+              L'infrastruttura Google Cloud / Firebase impiegata da Rook alloca i propri database prioritariamente all'interno dell'Unione Europea (Spazio Economico Europeo - SEE). Tuttavia, la natura globale dei servizi cloud forniti da Google LLC può comportare il transito o l'accesso a dati da server situati negli Stati Uniti d'America o in altri Paesi terzi.
             </p>
             <p>
               Tali trasferimenti avvengono nel rigoroso rispetto del <strong>Capo V del GDPR</strong> e sono legittimati da:
@@ -833,7 +928,7 @@
 
               <div class="definition-card">
                 <h3 class="def-term">Revoca del Consenso</h3>
-                <p class="def-desc">Revocare in qualsiasi momento il consenso accordato (es. posizione GPS) senza pregiudicare la liceità del trattamento pregresso.</p>
+                <p class="def-desc">Revocare in qualsiasi momento il consenso accordato (es. posizione GPS o notifiche) senza pregiudicare la liceità del trattamento pregresso.</p>
               </div>
             </div>
 
@@ -844,15 +939,25 @@
                 <div class="callout-icon">⚡</div>
                 <div class="callout-content">
                   <strong>Funzione di Cancellazione Immediata e Autonoma:</strong><br>
-                  Per garantire la massima effettività al diritto alla cancellazione (Art. 17 GDPR), CosaFare include all'interno dell'applicazione — nella sezione <em>«Profilo»</em> o <em>«Impostazioni»</em> — un pulsante dedicato denominato <strong>«Elimina Account»</strong>.<br>
-                  Premendo tale comando, l'Utente avvia la cancellazione immediata, totale e irreversibile del proprio account da Firebase Auth e l'eliminazione istantanea di tutti i preferiti e record memorizzati.
+                  Per garantire la massima effettività al diritto alla cancellazione (Art. 17 GDPR), Rook include all'interno dell'applicazione — nella sezione <em>«Profilo»</em> — un pulsante dedicato denominato <strong>«Elimina Account»</strong>.<br>
+                  Premendo tale comando, l'Utente avvia la cancellazione immediata, totale e irreversibile del proprio account da Firebase Auth e l'eliminazione istantanea di tutti i preferiti, impostazioni, keyword alerts e record memorizzati.
                 </div>
               </div>
             </div>
 
-            <!-- 10.2 Esercizio via email -->
+            <!-- 10.2 Gestione In-App Recensioni e Notifiche -->
             <div class="subsection">
-              <h3 class="subsection-title">10.2. Esercizio dei Diritti via Email</h3>
+              <h3 class="subsection-title">10.2. Gestione e Rimozione Autonoma di Recensioni e Notifiche</h3>
+              <p>
+                L'Utente ha il pieno controllo autonomo sui propri contenuti:<br>
+                - <strong>Recensioni:</strong> possono essere modificate o cancellate direttamente dalla scheda dell'evento in cui sono state inserite;<br>
+                - <strong>Notifiche e Keyword Alert:</strong> possono essere attivate, disattivate o personalizzate in ogni momento dalla card dedicata alle Notifiche nel Profilo.
+              </p>
+            </div>
+
+            <!-- 10.3 Esercizio via email -->
+            <div class="subsection">
+              <h3 class="subsection-title">10.3. Esercizio dei Diritti via Email</h3>
               <p>
                 Per qualsiasi altra istanza relativa ai propri dati personali, l'interessato può indirizzare una richiesta scritta al Titolare:
               </p>
@@ -862,9 +967,9 @@
               </p>
             </div>
 
-            <!-- 10.3 Reclamo al Garante -->
+            <!-- 10.4 Reclamo al Garante -->
             <div class="subsection">
-              <h3 class="subsection-title">10.3. Diritto di Reclamo all'Autorità di Controllo</h3>
+              <h3 class="subsection-title">10.4. Diritto di Reclamo all'Autorità di Controllo</h3>
               <div class="callout callout-info">
                 <div class="callout-icon">🏛️</div>
                 <div class="callout-content">
@@ -928,13 +1033,13 @@
 
           <div class="section-content">
             <p>
-              Il Titolare <strong>NON adotta</strong> processi decisionali basati interamente su trattamenti automatizzati né attività di profilazione che producano effetti giuridici sull'interessato o che incidano in modo analogo significativamente sulla sua persona ai sensi dell'art. 22 del GDPR.
+              Il Titolare <strong>NON adotta</strong> processi decisionali basati interamente su trattamenti automatizzati né attività di profilazione commerciale che producano effetti giuridici sull'interessato o che incidano in modo analogo significativamente sulla sua persona ai sensi dell'art. 22 del GDPR.
             </p>
             <div class="callout callout-info">
               <div class="callout-icon">ℹ️</div>
               <div class="callout-content">
                 <strong>Filtri di Ordinamento Tecnico:</strong><br>
-                I filtri geografici e di vicinanza chilometrica operano come meri algoritmi tecnici di ordinamento visuale dell'elenco pubblico delle sagre ed eventi territoriali a puro vantaggio informativo dell'utente, senza alcuna valutazione predittiva di abitudini o preferenze commerciali.
+                I filtri geografici di vicinanza chilometrica e le notifiche su keyword operano come meri filtri tecnici basati sui parametri esplicitamente selezionati dall'utente, a puro vantaggio informativo e senza valutazioni predittive di abitudini commerciali.
               </div>
             </div>
           </div>
@@ -959,7 +1064,7 @@
 
           <div class="section-content">
             <p>
-              Il Titolare si riserva il diritto di modificare o aggiornare la presente Informativa sulla Privacy, anche in conseguenza di mutamenti nel quadro normativo applicabile in materia di protezione dei dati personali o del rilascio di nuove funzionalità nell'applicazione CosaFare.
+              Il Titolare si riserva il diritto di modificare o aggiornare la presente Informativa sulla Privacy, anche in conseguenza di mutamenti nel quadro normativo applicabile in materia di protezione dei dati personali o del rilascio di nuove funzionalità nell'applicazione Rook.
             </p>
             <p>
               Le eventuali versioni aggiornate saranno pubblicate con indicazione puntuale della data di ultimo aggiornamento e del numero di versione. In presenza di variazioni sostanziali nei trattamenti, gli utenti potranno essere informati tramite opportuno avviso all'interno dell'applicazione o con richiesta di presa visione aggiornata.
@@ -1007,8 +1112,8 @@
               <div class="contact-card">
                 <div class="contact-icon">📱</div>
                 <h4>Canale Diretto In-App</h4>
-                <p>Funzione di cancellazione autonoma account e supporto integrato.</p>
-                <span class="contact-inapp">Sezione Profilo / Impostazioni in CosaFare</span>
+                <p>Funzione di cancellazione autonoma account e gestione preferenze.</p>
+                <span class="contact-inapp">Sezione Profilo / Notifiche in Rook</span>
               </div>
             </div>
           </div>
@@ -1018,7 +1123,7 @@
         <div class="doc-closure">
           <div class="closure-badge">Fine del Documento</div>
           <p class="closure-text">
-            La presente Privacy Policy rappresenta l'impegno costante di CosaFare e TFDLab per una gestione trasparente, sicura e conforme dei tuoi dati personali.
+            La presente Privacy Policy rappresenta l'impegno costante di Rook e TFDLab per una gestione trasparente, sicura e pienamente conforme dei tuoi dati personali.
           </p>
           <div class="closure-actions">
             <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="btn-secondary">
@@ -1056,9 +1161,9 @@
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-brand">
-        <span class="footer-logo">CosaFare</span>
+        <span class="footer-logo">Rook</span>
         <p class="footer-desc">
-          L'applicazione dedicata a sagre, feste tradizionali ed eventi culturali nella Regione Toscana.
+          L'applicazione dedicata a sagre, feste tradizionali ed eventi culturali nella Regione Toscana (<code>it.rookapp.eventi</code>).
         </p>
       </div>
       <div class="footer-links">
@@ -1074,9 +1179,9 @@
       </div>
       <div class="footer-meta">
         <span class="footer-title">Informazioni Legali</span>
-        <p>&copy; 2026 CosaFare &bull; Sviluppato da TFDLab</p>
+        <p>&copy; 2026 Rook &bull; Sviluppato da TFDLab</p>
         <p>Tutti i diritti riservati &bull; Cascina (PI), Italia</p>
-        <p class="footer-note">Applicazione mobile per Android e sistemi supportati.</p>
+        <p class="footer-note">Applicazione mobile per Android (Package: <code>it.rookapp.eventi</code>).</p>
       </div>
     </div>
   </footer>
