@@ -38,8 +38,8 @@
           </div>
         </a>
         <div class="header-badges">
-          <span class="badge badge-version">v1.2</span>
-          <span class="badge badge-date">09 Ottobre 2026</span>
+          <span class="badge badge-version">v1.3</span>
+          <span class="badge badge-date">09 Novembre 2026</span>
         </div>
       </div>
 
@@ -127,7 +127,7 @@
         <div class="meta-strip">
           <div class="meta-item">
             <span class="meta-label">Ultimo aggiornamento</span>
-            <span class="meta-value">09 Ottobre 2026</span>
+            <span class="meta-value">09 Novembre 2026</span>
           </div>
           <div class="meta-divider"></div>
           <div class="meta-item">
@@ -256,7 +256,7 @@
               Il presente documento descrive le modalità, le finalità e le garanzie con cui vengono raccolti, trattati e conservati i dati personali degli utenti che accedono, navigano o interagiscono con l'applicazione mobile <strong>"Rook"</strong> (distribuita su Google Play Store con l'identificativo pacchetto <code>it.rookapp.eventi</code>, originariamente concepita in fase di prototipo come <em>"CosaFare"</em>) e i servizi cloud e backend a essa collegati.
             </p>
             <p style="margin-top: 8px; margin-bottom: 0; font-size: 0.875rem;">
-              <strong>Documento correlato:</strong> <a href="../TerminiCondizioni/index.html" class="link-styled">Termini e Condizioni di Utilizzo di Rook &rarr;</a>
+              <strong>Documento correlato:</strong> <a href="https://coccodrillo44.github.io/Termini-e-Condizioni-Rook/" class="link-styled" target="_blank" rel="noopener noreferrer">Termini e Condizioni di Utilizzo di Rook &rarr;</a>
             </p>
           </div>
         </div>
@@ -413,7 +413,8 @@
               <ul class="styled-list">
                 <li><strong>Accesso tramite Google Sign-In (Credential Manager):</strong> vengono acquisiti l'identificativo univoco alfanumerico (Firebase UID), l'indirizzo di posta elettronica associato all'account Google, il nome/cognome e l'URL dell'immagine avatar pubblica;</li>
                 <li><strong>Accesso con Email e Password:</strong> vengono acquisiti l'indirizzo email e la password, quest'ultima protetta da hashing crittografico asimmetrico gestito direttamente da Firebase Authentication. Il Titolare non visualizza né memorizza mai le password in chiaro;</li>
-                <li><strong>Profilo e Dati Visualizzati:</strong> nome anagrafico o nickname pubblico, eventuale denominazione dell'ente e stato di verifica del profilo.</li>
+                <li><strong>Profilo e Dati Visualizzati:</strong> nome anagrafico o nickname pubblico, eventuale denominazione dell'ente e stato di verifica del profilo;</li>
+                <li><strong>Associazione Staff-Ente:</strong> inserimento del codice staff alfanumerico univoco per collegare l'account personale dell'utente al profilo organizzativo dell'ente, convalidato tramite Cloud Functions di sicurezza.</li>
               </ul>
             </div>
 
@@ -424,6 +425,7 @@
                 <li><strong>Elenco Eventi nei "Preferiti":</strong> identificativi degli eventi salvati nel proprio account;</li>
                 <li><strong>Organizzatori Seguiti:</strong> elenco degli enti e associazioni seguiti per visualizzarne gli aggiornamenti;</li>
                 <li><strong>Categorie di Notifica Selezionate:</strong> preferenze espresse dall'utente (es. Sagre, Concerti, Arte, Folklore);</li>
+                <li><strong>Filtri per Caratteristiche e Inclusività:</strong> preferenze per opzioni alimentari speciali (vegetariane/vegane) o accessibilità motoria per disabili;</li>
                 <li><strong>Parole Chiave Personalizzate (Keyword Alert):</strong> termini arbitrari inseriti direttamente dall'utente (es. nomi di artisti, sagre specifiche, prodotti tipici come tartufo o castagna, opzioni gluten-free) per ricevere notifiche push automatiche appena un evento corrispondente viene pubblicato;</li>
                 <li><strong>Stato del Consenso e Impostazioni:</strong> configurazioni salvate localmente e su cloud nel profilo utente.</li>
               </ul>
@@ -462,7 +464,7 @@
               <ul class="styled-list">
                 <li><strong>Recensioni ed Esperienze Pubbliche:</strong> voto in stelle (da 1 a 5), testo del commento, timestamp di pubblicazione e nome o nickname dell'utente associato al proprio UID. Ciascun utente ha il pieno controllo per modificare o eliminare in ogni momento la propria recensione direttamente dalla scheda dell'evento;</li>
                 <li><strong>Messaggi di Chat In-App:</strong> comunicazioni testuali scambiate in tempo reale tra visitatori e organizzatori di eventi tramite canali Firebase Realtime Database dedicati, necessari per richiedere informazioni sullo svolgimento delle manifestazioni;</li>
-                <li><strong>Segnalazioni di Eventi:</strong> indirizzo email fornito dal segnalatore, motivazione e descrizione dettagliata per consentire la moderazione di contenuti inesatti o non conformi.</li>
+                <li><strong>Segnalazioni di Eventi:</strong> indirizzo email fornito dal segnalatore, motivazione, note descrittive, stato di elaborazione del ticket di moderazione e storico di risoluzione da parte dell'organizzatore competente.</li>
               </ul>
             </div>
 
@@ -486,7 +488,7 @@
                 <li><strong>Recapiti pubblici di contatto:</strong> indirizzo email di riferimento per il pubblico, recapiti telefonici per informazioni/prenotazioni, link ai siti web ufficiali o canali social;</li>
                 <li><strong>Materiale descrittivo e multimediale:</strong> fotografie di copertina, locandine promozionali, date, orari, programmi di svolgimento, menù gastronomici e listini prezzi;</li>
                 <li><strong>Booster di Visibilità:</strong> richiesta di piani promozionali (24h, 48h, 7 giorni) con memorizzazione della data di scadenza del boost per l'ordinamento in evidenza;</li>
-                <li><strong>Collaborazioni tra Enti:</strong> dati di coordinamento tra co-organizzatori per la gestione congiunta dell'evento.</li>
+                <li><strong>Collaborazioni tra Enti:</strong> dati di cooperazione tra co-organizzatori per la gestione congiunta dell'evento (richieste inviate, ricevute, stato di approvazione) e punteggio di reputazione con badge attribuiti all'ente.</li>
               </ul>
             </div>
 
@@ -932,15 +934,29 @@
               </div>
             </div>
 
-            <!-- 10.1 Procedura In-App -->
-            <div class="subsection" style="margin-top: 24px;">
-              <h3 class="subsection-title">10.1. Procedura Diretta In-App per l'Eliminazione dell'Account</h3>
+            <!-- 10.1 Procedura Eliminazione Account (Google Play Compliance) -->
+            <div class="subsection" id="eliminazione-account" style="margin-top: 24px;">
+              <h3 class="subsection-title">10.1. Eliminazione dell'Account e dei Dati Associati (Policy Google Play & Art. 17 GDPR)</h3>
               <div class="callout callout-gdpr">
                 <div class="callout-icon">⚡</div>
                 <div class="callout-content">
-                  <strong>Funzione di Cancellazione Immediata e Autonoma:</strong><br>
-                  Per garantire la massima effettività al diritto alla cancellazione (Art. 17 GDPR), Rook include all'interno dell'applicazione — nella sezione <em>«Profilo»</em> — un pulsante dedicato denominato <strong>«Elimina Account»</strong>.<br>
-                  Premendo tale comando, l'Utente avvia la cancellazione immediata, totale e irreversibile del proprio account da Firebase Auth e l'eliminazione istantanea di tutti i preferiti, impostazioni, keyword alerts e record memorizzati.
+                  <strong>Richiesta di Eliminazione dell'Account per l'app Rook (Sviluppatore: TFDLab):</strong><br>
+                  In conformità alle direttive di Google Play e al diritto alla cancellazione (Art. 17 GDPR), gli utenti possono richiedere la cancellazione totale e permanente del proprio account e di tutti i dati personali associati secondo due modalità:
+                  <ul class="styled-list" style="margin-top: 10px;">
+                    <li><strong>Modalità 1 — Direttamente In-App (Consigliata):</strong><br>
+                      1. Apri l'applicazione <strong>Rook</strong> sul tuo dispositivo Android;<br>
+                      2. Accedi alla sezione <strong>«Profilo»</strong> dalla barra di navigazione;<br>
+                      3. Scorri fino in fondo e premi sul pulsante <strong>«Elimina Account»</strong>;<br>
+                      4. Conferma la richiesta nella finestra di dialogo per avviare la cancellazione istantanea.
+                    </li>
+                    <li style="margin-top: 8px;"><strong>Modalità 2 — Richiesta via Web / Email (senza dover reinstallare l'app):</strong><br>
+                      Invia un'email all'indirizzo del Titolare <a href="mailto:tfdlab.info@gmail.com?subject=Richiesta%20Cancellazione%20Account%20Rook" class="link-styled"><strong>tfdlab.info@gmail.com</strong></a> con oggetto <em>"Richiesta Cancellazione Account Rook"</em>, specificando l'indirizzo email associato al tuo profilo Google o all'account dell'app. Il Titolare procederà alla cancellazione manuale e definitiva entro 30 giorni, confermando l'avvenuta operazione.
+                    </li>
+                  </ul>
+                  <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 0.875rem;">
+                    <strong>Dati che vengono eliminati:</strong> Identificativo univoco utente (Firebase UID), indirizzo email, nome/nickname del profilo, elenco eventi preferiti, organizzatori seguiti, parole chiave e preferenze di notifica salvate, token FCM del dispositivo e recensioni pubblicate.<br>
+                    <strong>Dati conservati e periodo di conservazione:</strong> Nessun dato personale viene trattenuto o archiviato (periodo di conservazione aggiuntivo: <strong>0 giorni</strong>). La cancellazione da Firebase Authentication e dai database è immediata, totale e irreversibile.
+                  </div>
                 </div>
               </div>
             </div>
@@ -1174,7 +1190,7 @@
           <li><a href="#sec-4">Basi Giuridiche GDPR</a></li>
           <li><a href="#sec-10">Diritti & Eliminazione In-App</a></li>
           <li><a href="#sec-14">Contatti & Supporto</a></li>
-          <li><a href="../TerminiCondizioni/index.html">Termini e Condizioni</a></li>
+          <li><a href="https://coccodrillo44.github.io/Termini-e-Condizioni-Rook/" target="_blank" rel="noopener noreferrer">Termini e Condizioni</a></li>
         </ul>
       </div>
       <div class="footer-meta">
