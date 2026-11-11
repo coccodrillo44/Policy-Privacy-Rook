@@ -293,14 +293,49 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 6. Stampa e Salvataggio PDF
+  // 6. Selettore Multilingua (IT / EN / DE)
   // =========================================================================
-  const printBtn = document.getElementById('printBtn');
-  if (printBtn) {
-    printBtn.addEventListener('click', () => {
-      window.print();
+  const langSwitcher = document.getElementById('langSwitcher');
+  const langBtn = document.getElementById('langBtn');
+
+  if (langBtn && langSwitcher) {
+    langBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = langSwitcher.classList.toggle('open');
+      langBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!langSwitcher.contains(e.target)) {
+        langSwitcher.classList.remove('open');
+        langBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && langSwitcher.classList.contains('open')) {
+        langSwitcher.classList.remove('open');
+        langBtn.setAttribute('aria-expanded', 'false');
+        langBtn.focus();
+      }
     });
   }
+
+  // Gestione selezione lingua (salvataggio preferenza e navigazione con ancoraggio corrente)
+  document.querySelectorAll('.lang-dropdown-item, .closure-lang-btn').forEach(item => {
+    item.addEventListener('click', (e) => {
+      const targetLang = item.getAttribute('data-lang');
+      if (targetLang) {
+        localStorage.setItem('rook_legal_lang', targetLang);
+      }
+      const targetHref = item.getAttribute('href');
+      if (targetHref && targetHref !== '#') {
+        e.preventDefault();
+        const currentHash = window.location.hash || '';
+        window.location.href = targetHref + currentHash;
+      }
+    });
+  });
 
   // =========================================================================
   // 7. Menù Mobile per Indice dei Contenuti

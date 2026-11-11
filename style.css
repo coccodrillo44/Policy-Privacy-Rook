@@ -1676,6 +1676,164 @@ mark.search-highlight.active-match {
   }
 }
 
+/* =========================================================================
+   Selettore Lingua Header & Closure (Multilingual Switcher)
+   ========================================================================= */
+.lang-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lang-btn .icon-globe {
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.lang-btn .btn-text {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.lang-btn .icon-chevron {
+  transition: transform var(--transition-fast);
+  color: var(--text-muted);
+}
+
+.lang-switcher.open .lang-btn .icon-chevron {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 160px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: 6px;
+  display: none;
+  flex-direction: column;
+  gap: 3px;
+  z-index: 1200;
+}
+
+.lang-switcher.open .lang-dropdown {
+  display: flex;
+}
+
+.lang-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--text-main);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: left;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.lang-dropdown-item:hover {
+  background-color: var(--bg-surface-alt);
+  color: var(--color-primary);
+}
+
+.lang-dropdown-item.active {
+  background-color: var(--bg-surface-alt);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.lang-dropdown-item .flag {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.lang-dropdown-item .label {
+  flex-grow: 1;
+}
+
+.lang-dropdown-item .check {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  opacity: 0;
+}
+
+.lang-dropdown-item.active .check {
+  opacity: 1;
+}
+
+/* Selettore Lingua a Fondo Pagina (Closure) */
+.closure-lang-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--bg-surface-alt);
+  padding: 4px 8px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.closure-lang-label {
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+
+.closure-lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  font-size: 0.825rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.closure-lang-btn:hover {
+  color: var(--text-main);
+  background-color: var(--bg-surface);
+}
+
+.closure-lang-btn.active {
+  color: #ffffff;
+  background-color: var(--color-primary);
+  box-shadow: 0 2px 6px rgba(200, 75, 49, 0.25);
+}
+
+@media (max-width: 640px) {
+  .lang-btn .btn-text {
+    display: inline-block !important;
+    font-size: 0.8rem;
+  }
+}
+
 /* --------------------------------------------------------------------------
    11. Stili per la Stampa (Print Stylesheet)
    -------------------------------------------------------------------------- */

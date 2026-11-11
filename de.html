@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung — Rook</title>
+  <meta name="description" content="Informationen zur Verarbeitung personenbezogener Daten (Datenschutzerklärung) der mobilen Anwendung Rook – Events in der Toskana (it.rookapp.eventi) gemäß EU-Verordnung 2016/679 (DSGVO).">
+  <meta name="theme-color" content="#c84b31">
+
+  <!-- Favicon SVG Identitaria Rook / Toscana -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23c84b31'/><path d='M10 8h12v4l-2 2v6h2v4H8v-4h2v-6l-2-2V8h2zm3 3v2h2v-2h-2zm4 0v2h2v-2h-2z' fill='white'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/privacy/style.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="readingProgress" class="reading-progress-bar" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <a href="#hero" class="brand-logo" aria-label="Home">
+          <span class="logo-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </span>
+          <div class="brand-text">
+            <span class="brand-name">Rook</span>
+            <span class="brand-tagline">Events & Traditionen in der Toskana</span>
+          </div>
+        </a>
+        <div class="header-badges">
+          <span class="badge badge-version">v1.3</span>
+          <span class="badge badge-date">09. November 2026</span>
+        </div>
+      </div>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Quick Search Box -->
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Klauseln suchen (z. B. GPS, Benachrichtigungen, Stichworte, Bewertungen)..." aria-label="Search">
+          <button id="clearSearchBtn" class="clear-search-btn" aria-label="Clear" hidden>&times;</button>
+          <span class="search-shortcut" title="Press / or Ctrl+K to search">/</span>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="lang-switcher" id="langSwitcher">
+          <button id="langBtn" class="action-btn lang-btn" aria-haspopup="true" aria-expanded="false" title="Switch language">
+            <svg class="icon-globe" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+            <span class="btn-text">DE</span>
+            <svg class="icon-chevron" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown" role="menu">
+            <a href="index.html" class="lang-dropdown-item" data-lang="it" role="menuitem">
+              <span class="flag">🇮🇹</span>
+              <span class="label">Italiano</span>
+              <span class="check">✓</span>
+            </a>
+            <a href="en.html" class="lang-dropdown-item" data-lang="en" role="menuitem">
+              <span class="flag">🇬🇧</span>
+              <span class="label">English</span>
+              <span class="check">✓</span>
+            </a>
+            <a href="#" class="lang-dropdown-item active" data-lang="de" role="menuitem">
+              <span class="flag">🇩🇪</span>
+              <span class="label">Deutsch</span>
+              <span class="check">✓</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Light/Dark Theme Switcher -->
+        <button id="themeToggle" class="action-btn theme-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile TOC Toggle -->
+        <button id="mobileTocToggle" class="action-btn mobile-toc-btn" aria-label="Toggle contents index">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <span class="btn-text">TOC</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Search Results Counter -->
+  <div id="searchStatusBar" class="search-status-bar" hidden>
+    <div class="search-status-inner">
+      <span id="searchResultCount">0 matches found</span>
+      <div class="search-nav-controls">
+        <button id="prevMatchBtn" title="Previous (Shift+Enter)">&uarr;</button>
+        <button id="nextMatchBtn" title="Next (Enter)">&darr;</button>
+        <button id="closeSearchAlertBtn" class="close-search">&times;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="main-wrapper">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Offizielle Datenschutzerklärung (DSGVO)
+        </div>
+        <h1 class="hero-title">Datenschutzerklärung & Verarbeitung personenbezogener Daten</h1>
+        <p class="hero-subtitle">
+          Information gemäß den Artikeln 13 und 14 der Verordnung (EU) 2016/679 („DSGVO“) sowie geltendem Datenschutzrecht für die mobile Anwendung <strong>Rook – Events in der Toskana</strong> (Application ID: <code>it.rookapp.eventi</code>).
+        </p>
+
+        <!-- Metadata Strip -->
+        <div class="meta-strip">
+          <div class="meta-item">
+            <span class="meta-label">Letzte Aktualisierung</span>
+            <span class="meta-value">09. November 2026</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label">Dokumentenversion</span>
+            <span class="meta-value">v1.3</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label">Android-Paket-ID</span>
+            <span class="meta-value"><code>it.rookapp.eventi</code></span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label">Verantwortlicher / Entwicklung</span>
+            <span class="meta-value">Project Rook &bull; TFDLab</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label">Lesezeit</span>
+            <span class="meta-value" id="readTimeEstimate">~8 Minuten</span>
+          </div>
+        </div>
+
+        <!-- Key Points Cards Grid -->
+        <div class="key-points-grid">
+          <div class="point-card">
+            <div class="point-icon">🛡️</div>
+            <div class="point-body">
+              <h3>DSGVO-Konformität</h3>
+              <p>Datenverarbeitung basiert auf Transparenz, Rechtmäßigkeit, Treu und Glauben sowie strikter Datenminimierung (EU-VO 2016/679).</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">🔑</div>
+            <div class="point-body">
+              <h3>Google Sign-In & E-Mail</h3>
+              <p>Surfen Sie anonym im Gastmodus oder melden Sie sich sicher über Google Sign-In oder verschlüsselte E-Mail/Passwort an.</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">🔔</div>
+            <div class="point-body">
+              <h3>Benachrichtigungen & Stichwort-Alerts</h3>
+              <p>Erhalten Sie maßgeschneiderte Alerts für ausgewählte Kategorien und persönliche Suchbegriffe via Firebase Cloud Messaging.</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">📍</div>
+            <div class="point-body">
+              <h3>Transparentes GPS & Null Historie</h3>
+              <p>Echtzeit-Standortbestimmung berechnet Entfernungen zu Events. Kein Hintergrund-Tracking und keine Speicherung von Bewegungsprofilen.</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">💬</div>
+            <div class="point-body">
+              <h3>Bewertungen & Sicherer Chat</h3>
+              <p>Teilen Sie Event-Feedback oder schreiben Sie Veranstaltern sicher – mit voller Kontrolle zum Ändern oder Löschen eigener Beiträge.</p>
+            </div>
+          </div>
+          <div class="point-card">
+            <div class="point-icon">🗑️</div>
+            <div class="point-body">
+              <h3>Kontolöschung direkt in der App</h3>
+              <p>Unmittelbares Recht auf Löschung (Vergessenwerden) mit einem einzigen Fingertipp in den Profileinstellungen der App.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two-column Layout: TOC Sidebar + Document Content -->
+    <div class="content-layout">
+      <!-- Sidebar TOC -->
+      <aside class="sidebar-wrapper" id="sidebarWrapper">
+        <div class="sidebar-sticky">
+          <div class="sidebar-header">
+            <h2 class="sidebar-title">Inhaltsverzeichnis</h2>
+            <span class="toc-counter">14 Abschnitte</span>
+          </div>
+
+          <nav class="toc-nav" id="tocNav" aria-label="TOC">
+            <ol class="toc-list">
+              <li><a href="#sec-1" class="toc-link"><span class="toc-num">01</span> Verantwortlicher für die Datenverarbeitung</a></li>
+              <li><a href="#sec-2" class="toc-link"><span class="toc-num">02</span> Anwendungsbereich und Empfängerkreise</a></li>
+              <li><a href="#sec-3" class="toc-link"><span class="toc-num">03</span> Kategorien verarbeiteter personenbezogener Daten</a></li>
+              <li><a href="#sec-4" class="toc-link"><span class="toc-num">04</span> Zwecke und Rechtsgrundlagen der Verarbeitung</a></li>
+              <li><a href="#sec-5" class="toc-link"><span class="toc-num">05</span> Art der Bereitstellung personenbezogener Daten</a></li>
+              <li><a href="#sec-6" class="toc-link"><span class="toc-num">06</span> Verarbeitungsmethoden und Sicherheitsmaßnahmen</a></li>
+              <li><a href="#sec-7" class="toc-link"><span class="toc-num">07</span> Speicherdauer (Data Retention)</a></li>
+              <li><a href="#sec-8" class="toc-link"><span class="toc-num">08</span> Datenempfänger und Drittanbieter</a></li>
+              <li><a href="#sec-9" class="toc-link"><span class="toc-num">09</span> Datenübermittlung in Drittländer außerhalb des EWR</a></li>
+              <li><a href="#sec-10" class="toc-link"><span class="toc-num">10</span> Rechte der betroffenen Person (Art. 15–22 DSGVO)</a></li>
+              <li><a href="#sec-11" class="toc-link"><span class="toc-num">11</span> Schutz von Minderjährigen</a></li>
+              <li><a href="#sec-12" class="toc-link"><span class="toc-num">12</span> Automatisierte Entscheidungsfindung und Profiling</a></li>
+              <li><a href="#sec-13" class="toc-link"><span class="toc-num">13</span> Aktualisierungen der Datenschutzerklärung</a></li>
+              <li><a href="#sec-14" class="toc-link"><span class="toc-num">14</span> Kontaktdaten des Verantwortlichen</a></li>
+            </ol>
+          </nav>
+
+          <!-- Sidebar Help Card -->
+          <div class="sidebar-help-card">
+            <h4>Fragen zum Datenschutz?</h4>
+            <p>Kontaktieren Sie den Verantwortlichen direkt, um Ihre DSGVO-Rechte wahrzunehmen oder Auskünfte zu erhalten.</p>
+            <a href="mailto:tfdlab.info@gmail.com" class="sidebar-contact-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>tfdlab.info@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Legal Document Content -->
+      <main class="legal-document" id="legalDocument">
+
+        <!-- Callout Premise -->
+        <div class="callout callout-gdpr" style="margin-bottom: 28px;">
+          <div class="callout-icon">📜</div>
+          <div class="callout-content">
+            <strong>Rechtlicher Rahmen & Präambel:</strong><br>
+            Diese Datenschutzerklärung (nachfolgend <strong>„Privacy Policy“</strong>) erfolgt gemäß den Artikeln 13 und 14 der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27. April 2016 (<strong>„Datenschutz-Grundverordnung“</strong> oder <strong>„DSGVO“</strong>) sowie den anwendbaren nationalen Datenschutzgesetzen.
+            <p style="margin-top: 8px; margin-bottom: 0;">
+              Dieses Dokument beschreibt die Methoden, Zwecke und Schutzmaßnahmen, mit denen personenbezogene Daten von Nutzern erhoben, verarbeitet und gespeichert werden, die die mobile Anwendung <strong>„Rook“</strong> (im Google Play Store unter der Application ID <code>it.rookapp.eventi</code>, ursprünglich als <em>„CosaFare“</em> entwickelt) und deren Backend-Dienste nutzen.
+            </p>
+            <p style="margin-top: 8px; margin-bottom: 0; font-size: 0.875rem;">
+              <strong>Zugehöriges Dokument:</strong> <a href="/terms/de" class="link-styled">Allgemeine Nutzungsbedingungen &rarr;</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- SECTION 1 -->
+        <!-- ========================================== -->
+        <article id="sec-1" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">01</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">1. Verantwortlicher für die Datenverarbeitung</h2>
+              <button class="copy-anchor-btn" data-target="sec-1" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Verantwortlicher für die Verarbeitung personenbezogener Daten im Zusammenhang mit der mobilen Anwendung <strong>„Rook“</strong> ist:</p>
+
+            <div class="operator-card">
+              <div class="operator-badge">Angaben zum Verantwortlichen</div>
+              <ul class="operator-details">
+                <li>
+                  <span class="detail-label">Projektträger:</span>
+                  <span class="detail-value"><strong>Rook</strong> (ursprünglich entwickelt als <em>CosaFare</em>)</span>
+                </li>
+                <li>
+                  <span class="detail-label">Offizielle Application ID:</span>
+                  <span class="detail-value"><code>it.rookapp.eventi</code></span>
+                </li>
+                <li>
+                  <span class="detail-label">Entwickler / Technische Leitung:</span>
+                  <span class="detail-value"><strong>TFDLab</strong></span>
+                </li>
+                <li>
+                  <span class="detail-label">Standort / Anschrift:</span>
+                  <span class="detail-value">Cascina, Pisa, Toskana, Italien</span>
+                </li>
+                <li>
+                  <span class="detail-label">E-Mail für Datenschutzfragen und Rechteausübung:</span>
+                  <span class="detail-value"><a href="mailto:tfdlab.info@gmail.com" class="link-styled">tfdlab.info@gmail.com</a></span>
+                </li>
+              </ul>
+            </div>
+
+            <p>Soweit im Folgenden die Bezeichnungen <em>„Verantwortlicher“</em>, <em>„wir“</em> oder <em>„Rook“</em> verwendet werden, beziehen sich diese auf die oben genannte Stelle, die über die Zwecke und Mittel der Datenverarbeitung entscheidet.</p>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 2 -->
+        <!-- ========================================== -->
+        <article id="sec-2" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">02</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">2. Anwendungsbereich und Empfängerkreise</h2>
+              <button class="copy-anchor-btn" data-target="sec-2" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Diese Datenschutzerklärung gilt für jede Person, die Dienste von Rook nutzt, insbesondere für:</p>
+
+            <div class="scope-cards-list">
+              <div class="scope-item">
+                <span class="scope-badge">1</span>
+                <div>
+                  <strong>Gastnutzer (Nicht authentifizierte Besucher)</strong>
+                  <p>Personen, die die App anonym im Gastmodus durchsuchen, um den Eventkatalog unverbindlich einzusehen, ohne ein Konto anzulegen.</p>
+                </div>
+              </div>
+              <div class="scope-item">
+                <span class="scope-badge">2</span>
+                <div>
+                  <strong>Registrierte Nutzer</strong>
+                  <p>Personen, die sich über <strong>Google Sign-In</strong> oder mit <strong>E-Mail und Passwort</strong> anmelden, um Favoriten zu synchronisieren, Benachrichtigungs-Alerts zu konfigurieren, Rezensionen zu verfassen oder mit Veranstaltern zu chatten.</p>
+                </div>
+              </div>
+              <div class="scope-item">
+                <span class="scope-badge">3</span>
+                <div>
+                  <strong>Veranstalter und Verbandsvertreter</strong>
+                  <p>Natürliche Personen oder Beauftragte von Vereinen, Pro-Loco-Verbänden und Behörden, die Veranstaltungen veröffentlichen, Kooperationen koordinieren, Chats beantworten oder Sichtbarkeits-Booster buchen.</p>
+                </div>
+              </div>
+            </div>
+
+            <p style="margin-top: 18px;">Die Anwendung ist gezielt auf das Gebiet der <strong>Region Toskana</strong> ausgerichtet und wird offiziell im <strong>Google Play Store</strong> bereitgestellt (Paket: <code>it.rookapp.eventi</code>):</p>
+
+            <div class="provinces-pills">
+              <span class="province-pill">Arezzo</span>
+              <span class="province-pill">Firenze</span>
+              <span class="province-pill">Grosseto</span>
+              <span class="province-pill">Livorno</span>
+              <span class="province-pill">Lucca</span>
+              <span class="province-pill">Massa-Carrara</span>
+              <span class="province-pill">Pisa</span>
+              <span class="province-pill">Pistoia</span>
+              <span class="province-pill">Prato</span>
+              <span class="province-pill">Siena</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 3 -->
+        <!-- ========================================== -->
+        <article id="sec-3" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">03</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">3. Kategorien verarbeiteter personenbezogener Daten</h2>
+              <button class="copy-anchor-btn" data-target="sec-3" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Je nach Nutzungsart der App erheben und verarbeiten wir folgende Kategorien personenbezogener Daten:</p>
+
+            <!-- 3.1 Account -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.1. Authentifizierungs- und Kontodaten (Registrierte Nutzer)</h3>
+              <p>Die App ermöglicht die sichere Anmeldung über die zertifizierte Infrastruktur von Firebase Authentication auf zwei Wegen:</p>
+              <ul class="styled-list">
+                <li><strong>Google Sign-In (Credential Manager):</strong> Erfassung einer eindeutigen Kennung (Firebase UID), der mit dem Google-Konto verknüpften E-Mail-Adresse, des Namens und der öffentlichen Profilbild-URL;</li><li><strong>Anmeldung mit E-Mail und Passwort:</strong> Erfassung der E-Mail-Adresse und des Passworts, welches durch asymmetrische Einweg-Verschlüsselung direkt bei Firebase Authentication geschützt wird. Der Verantwortliche hat zu keinem Zeitpunkt Einsicht in Klartextpasswörter;</li><li><strong>Öffentliche Profildaten:</strong> Anzeigename oder Nickname, optionale Verbandsbezeichnung und Verifizierungsstatus;</li><li><strong>Mitarbeiter-Verbandskopplung:</strong> Eingabe eines eindeutigen Staff-Codes, um das persönliche Konto mit einem Veranstalterprofil zu verknüpfen, serverseitig validiert durch Cloud Functions.</li>
+              </ul>
+            </div>
+
+            <!-- 3.2 Preferences & Keywords -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.2. Präferenzen, Interessen und Stichwort-Alerts (Keyword Alert)</h3>
+              <ul class="styled-list">
+                <li><strong>Favoritenliste:</strong> Kennungen der im Konto gespeicherten Veranstaltungen;</li><li><strong>Gefolgte Veranstalter:</strong> Liste der abonnierten Organisationen für Updates;</li><li><strong>Ausgewählte Benachrichtigungskategorien:</strong> Vorlieben (z. B. Sagre/Dorffeste, Konzerte, Kunst, Folklore);</li><li><strong>Inklusions- und Speisefilter:</strong> Präferenzen für besondere Ernährungsformen (vegetarisch/vegan) und barrierefreie Zugänglichkeit;</li><li><strong>Individuelle Stichwörter (Keyword Alert):</strong> Vom Nutzer frei hinterlegte Suchbegriffe (z. B. Künstlernamen, Trüffel, Kastanien, glutenfreie Angebote), um sofortige Push-Benachrichtigungen bei passenden Events zu erhalten;</li><li><strong>Einwilligungsstatus & Einstellungen:</strong> Lokal und im Cloud-Profil gespeicherte Konfigurationen.</li>
+              </ul>
+            </div>
+
+            <!-- 3.3 GPS -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.3. Geolokalisierungsdaten (GPS-Standort)</h3>
+              <p>Rook kann den <strong>Echtzeit-Standort</strong> (Breiten- und Längengradkoordinaten des Endgeräts) erfassen.</p>
+              <p><strong>Bedingungen und maximale Transparenz:</strong><br>Die Erfassung erfolgt <strong>AUSSCHLIESSLICH nach ausdrücklicher Einwilligung</strong> über den Systemdialog des Betriebssystems (<em>„Bei Nutzung der App“</em> oder <em>„Nur dieses Mal“</em>).</p>
+              <p>Standortdaten dienen ausschließlich folgenden Zwecken:</p>
+              <ol class="styled-list">
+                <li>Berechnung der Entfernung zu den im Katalog aufgeführten Veranstaltungsorten;</li><li>Dynamische Sortierung der Veranstaltungen nach geografischer Nähe zum aktuellen Standort;</li><li>Anzeige des Standorts auf der interaktiven Karte über das Google Maps SDK.</li>
+              </ol>
+
+              <div class="callout callout-warning">
+                <div class="callout-icon">⚠️</div>
+                <div class="callout-content">
+                  DATENSCHUTZGARANTIE FÜR GPS — NULL VERLAUFSSPEICHERUNG:<br>GPS-Daten werden <strong>NIEMALS dauerhaft gespeichert</strong>, dienen <strong>NICHT</strong> zur Erstellung von Bewegungsprofilen und werden <strong>NICHT im Hintergrund getrackt</strong>.<br>Wird die GPS-Berechtigung verweigert, kann die App weiterhin uneingeschränkt über die manuelle Auswahl der toskanischen Provinzen genutzt werden.
+                </div>
+              </div>
+            </div>
+
+            <!-- 3.4 UGC Reviews & Chat -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.4. Nutzergenerierte Inhalte (Bewertungen, Chat und Meldungen)</h3>
+              <ul class="styled-list">
+                <li><strong>Öffentliche Bewertungen:</strong> Sternebewertung (1 bis 5), Kommentartext, Zeitstempel und Anzeigename. Jeder Nutzer kann seine Rezensionen jederzeit direkt in der Event-Ansicht bearbeiten oder löschen;</li><li><strong>In-App-Chat-Nachrichten:</strong> Echtzeit-Nachrichten zwischen Besuchern und Veranstaltern über dedizierte Firebase-Kanäle zur Klärung organisatorischer Fragen;</li><li><strong>Event-Meldungen:</strong> E-Mail-Adresse des Meldenden, Begründung, Status des Moderations-Tickets und Bearbeitungsverlauf durch den Veranstalter.</li>
+              </ul>
+            </div>
+
+            <!-- 3.5 FCM -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.5. Daten für Push-Benachrichtigungen (Firebase Cloud Messaging - FCM)</h3>
+              <p>Wenn Benachrichtigungen autorisiert werden (Android 13+ Berechtigung <code>POST_NOTIFICATIONS</code>), wird ein <strong>eindeutiges Geräte-Token (FCM-Token)</strong> generiert.<br>Dieses ermöglicht die Zustellung themenbezogener Benachrichtigungen, ohne das externe Web-Surfen des Nutzers zu erfassen.</p>
+            </div>
+
+            <!-- 3.6 Organizers -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.6. Daten von Veranstaltern, Events und Sichtbarkeits-Boostern</h3>
+              <p>Für Veranstalter und Beauftragte, die Inhalte bereitstellen:</p>
+              <ul class="styled-list">
+                <li><strong>Stammdaten:</strong> Name des Veranstalters, Vereins oder Trägerkomitees;</li><li><strong>Öffentliche Kontaktdaten:</strong> E-Mail-Adresse für Besucher, Telefonnummern für Auskünfte, Web- und Social-Links;</li><li><strong>Programminhalte & Medien:</strong> Titelbilder, Werbeflyer, Termine, Öffnungszeiten, Speisekarten und Preislisten;</li><li><strong>Sichtbarkeits-Booster:</strong> Buchung von Promotion-Plänen (24h, 48h, 7 Tage) mit Speicherung des Ablaufdatums für Hervorhebungen;</li><li><strong>Kooperationen:</strong> Partnerschaftsdaten zwischen Co-Veranstaltern und Reputations-Score mit Trust-Badges.</li>
+              </ul>
+            </div>
+
+            <!-- 3.7 Technical -->
+            <div class="subsection">
+              <h3 class="subsection-title">3.7. Technische Daten, Logfiles und Diagnose</h3>
+              <ul class="styled-list">
+                <li><strong>IP-Adresse:</strong> Vorübergehend verarbeitet zur Weiterleitung von HTTPS-Netzwerkabfragen;</li><li><strong>Geräteinformationen:</strong> Gerätemodell, Hersteller und Android-Betriebssystemversion;</li><li><strong>Netzwerk-Zeitstempel:</strong> Protokollierung von Datenbankzugriffen in Firebase;</li><li><strong>Fehlerberichte:</strong> Aggregierte Absturzberichte zur Sicherstellung von Stabilität und IT-Sicherheit.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 4 -->
+        <!-- ========================================== -->
+        <article id="sec-4" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">04</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">4. Zwecke und Rechtsgrundlagen der Verarbeitung</h2>
+              <button class="copy-anchor-btn" data-target="sec-4" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Personenbezogene Daten werden ausschließlich für festgelegte, eindeutige und legitime Zwecke gemäß Art. 6 DSGVO verarbeitet:</p>
+
+            <div class="features-showcase">
+              <div class="feature-box">
+                <div class="feature-num">01</div>
+                <div class="feature-main">
+                  <h4>Bereitstellung der App-Dienste & Kernfunktionen</h4>
+                  <p>Ermöglichung der Katalogrecherche in der Toskana, Favoritensynchronisierung, Veröffentlichung von Rezensionen, In-App-Chat und interaktive Kartennavigation.</p>
+                  <span class="rule-badge">Art. 6 Abs. 1 lit. b DSGVO — Vertragserfüllung</span>
+                  
+                </div>
+              </div>
+              <div class="feature-box">
+                <div class="feature-num">02</div>
+                <div class="feature-main">
+                  <h4>Echtzeit-Geolokalisierung & Entfernungsberechnung</h4>
+                  <p>Erfassung von GPS-Koordinaten zur Sortierung nach Nähe, Berechnung der Kilometerdistanz und Anzeige auf der interaktiven Karte.</p>
+                  <span class="rule-badge">Art. 6 Abs. 1 lit. a DSGVO — Ausdrückliche Einwilligung</span>
+                  <p style="font-size: 0.8125rem; color: var(--text-light); margin-top: 6px; margin-bottom: 0 !important;">Die Einwilligung wird über das Betriebssystem erteilt und kann jederzeit in den Smartphone-Einstellungen widerrufen werden.</p>
+                </div>
+              </div>
+              <div class="feature-box">
+                <div class="feature-num">03</div>
+                <div class="feature-main">
+                  <h4>Push-Benachrichtigungen & Stichwort-Alerts</h4>
+                  <p>Zusendung automatischer Push-Nachrichten bei Veröffentlichung passender Events zu gewählten Kategorien oder Begriffen.</p>
+                  <span class="rule-badge">Art. 6 Abs. 1 lit. a DSGVO — Ausdrückliche Einwilligung</span>
+                  <p style="font-size: 0.8125rem; color: var(--text-light); margin-top: 6px; margin-bottom: 0 !important;">Benachrichtigungen und Suchbegriffe können jederzeit im Profil verwaltet oder deaktiviert werden.</p>
+                </div>
+              </div>
+              <div class="feature-box">
+                <div class="feature-num">04</div>
+                <div class="feature-main">
+                  <h4>IT-Sicherheit, Moderation & Missbrauchsprävention</h4>
+                  <p>Schutz der Firebase-Datenbanken vor unbefugten Zugriffen, Spam-Abwehr und Prüfung gemeldeter unzulässiger Inhalte.</p>
+                  <span class="rule-badge">Art. 6 Abs. 1 lit. f DSGVO — Berechtigtes Interesse</span>
+                  
+                </div>
+              </div>
+              <div class="feature-box">
+                <div class="feature-num">05</div>
+                <div class="feature-main">
+                  <h4>Erfüllung gesetzlicher Pflichten & Rechtsverteidigung</h4>
+                  <p>Erfüllung behördlicher oder gerichtlicher Auflagen sowie Durchsetzung oder Abwehr von Rechtsansprüchen.</p>
+                  <span class="rule-badge">Art. 6 Abs. 1 lit. c DSGVO — Rechtliche Verpflichtung</span>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 5 -->
+        <!-- ========================================== -->
+        <article id="sec-5" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">05</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">5. Art der Bereitstellung personenbezogener Daten</h2>
+              <button class="copy-anchor-btn" data-target="sec-5" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Die Bereitstellung der Daten richtet sich nach den genutzten App-Funktionen:</p>
+
+            <div class="rules-block">
+              <div class="rule-row">
+                <span class="rule-badge">Technisch Erforderlich</span>
+                <div class="rule-text">
+                  <strong>Grundlegende Verbindungsdaten:</strong> Technisch zwingend für den Aufbau der Internetverbindung. Ohne diese Daten kann der Eventkatalog nicht geladen werden.
+                </div>
+              </div>
+              <div class="rule-row">
+                <span class="rule-badge">Freiwillig / Konto</span>
+                <div class="rule-text">
+                  <strong>Google oder E-Mail/Passwort-Anmeldung:</strong> Vollständig freiwillig. Die App kann uneingeschränkt anonym im Gastmodus genutzt werden. Ein Verzicht beschränkt lediglich Favoritensynchronisierung, Chat und Rezensionen.
+                </div>
+              </div>
+              <div class="rule-row">
+                <span class="rule-badge">Freiwillig / GPS</span>
+                <div class="rule-text">
+                  <strong>Standortberechtigung (GPS):</strong> Freiwillig. Eine Ablehnung verhindert lediglich die automatische Entfernungssortierung, schränkt jedoch das manuelle Durchsuchen toskanischer Regionen nicht ein.
+                </div>
+              </div>
+              <div class="rule-row">
+                <span class="rule-badge">Freiwillig / Alerts</span>
+                <div class="rule-text">
+                  <strong>Push-Benachrichtigungen & Stichwörter:</strong> Freiwillig. Die Ablehnung verhindert nur den Erhalt von Echtzeit-Nachrichten, alle übrigen Funktionen bleiben vollständig verfügbar.
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 6 -->
+        <!-- ========================================== -->
+        <article id="sec-6" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">06</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">6. Verarbeitungsmethoden und Sicherheitsmaßnahmen</h2>
+              <button class="copy-anchor-btn" data-target="sec-6" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Die Datenverarbeitung erfolgt unter Einsatz elektronischer und automatisierter Systeme unter Beachtung der Grundsätze der Rechtmäßigkeit, Transparenz, Zweckbindung und Datenminimierung (Art. 5 DSGVO).</p>
+            <p>Gemäß Art. 32 DSGVO wurden umfassende technische und organisatorische Sicherheitsmaßnahmen getroffen:</p>
+
+            <div class="definitions-grid">
+              <div class="definition-card">
+                <h3 class="def-term">🔒 Transportverschlüsselung (HTTPS/TLS)</h3>
+                <p class="def-desc">Sämtliche Verbindungen zwischen App, Schnittstellen und Firebase-Servern erfolgen über hochsichere TLS/HTTPS-Verschlüsselungsprotokolle.</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">🛡️ Firebase Security Rules</h3>
+                <p class="def-desc">Serverseitige Zugriffsregeln gewährleisten eine strikte Trennung: Authentifizierte Nutzer haben nur Zugriff auf ihre eigenen Daten und Favoriten.</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">🤖 Lokale On-Device-Übersetzung (ML Kit)</h3>
+                <p class="def-desc">Echtzeitübersetzungen werden direkt auf dem Smartphone ausgeführt. Die gelesenen Texte werden nicht an externe Server übertragen.</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">🔑 Zwei-Faktor-Authentifizierung (2FA)</h3>
+                <p class="def-desc">Administrative Zugänge zu Firebase-Konsolen und Datenbanken sind durch zwingende Mehrfaktor-Authentifizierung geschützt.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 7 -->
+        <!-- ========================================== -->
+        <article id="sec-7" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">07</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">7. Speicherdauer (Data Retention)</h2>
+              <button class="copy-anchor-btn" data-target="sec-7" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Personenbezogene Daten werden nur so lange gespeichert, wie es für die jeweiligen Verarbeitungszwecke erforderlich ist:</p>
+
+            <div class="jurisdiction-box">
+              <div class="jurisdiction-card">
+                <div class="card-icon">👤</div>
+                <h4>Nutzerkonto, Favoriten & Stichwörter</h4>
+                <p>Profildaten bleiben für die Dauer des aktiven Kontos gespeichert. Konten mit mehr als <strong>24 Monaten Inaktivität</strong> können gelöscht werden.</p>
+              </div>
+              <div class="jurisdiction-card">
+                <div class="card-icon">⭐</div>
+                <h4>Rezensionen und Bewertungen</h4>
+                <p>Bewertungen bleiben sichtbar, bis sie vom Nutzer in der App gelöscht werden oder das Konto bzw. Event entfernt wird.</p>
+              </div>
+              <div class="jurisdiction-card">
+                <div class="card-icon">💬</div>
+                <h4>In-App-Chatnachrichten</h4>
+                <p>Nachrichten zwischen Nutzern und Veranstaltern werden für die Dauer der Anfrage gespeichert und nach Abschluss gelöscht.</p>
+              </div>
+              <div class="jurisdiction-card">
+                <div class="card-icon">📍</div>
+                <h4>GPS-Standortdaten</h4>
+                <p>Standortdaten werden <strong>ausschließlich in Echtzeit im flüchtigen Speicher verarbeitet</strong>. Es erfolgt <strong>keine Speicherung oder Historisierung</strong> auf Servern.</p>
+              </div>
+              <div class="jurisdiction-card">
+                <div class="card-icon">🔔</div>
+                <h4>Push-Token (FCM)</h4>
+                <p>Das Geräte-Token wird bis zur Deaktivierung der Benachrichtigungen oder Deinstallation der App gespeichert.</p>
+              </div>
+              <div class="jurisdiction-card">
+                <div class="card-icon">📋</div>
+                <h4>Technische Logfiles</h4>
+                <p>Verbindungsprotokolle und IP-Adressen werden aus Sicherheitsgründen maximal <strong>12 Monate</strong> aufbewahrt.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 8 -->
+        <!-- ========================================== -->
+        <article id="sec-8" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">08</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">8. Datenempfänger und Drittanbieter</h2>
+              <button class="copy-anchor-btn" data-target="sec-8" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Personenbezogene Daten können an Dienstleister weitergegeben werden, die als <strong>Auftragsverarbeiter</strong> gemäß Art. 28 DSGVO oder eigenständige Verantwortliche agieren:</p>
+
+            <div class="definitions-grid">
+              <div class="definition-card">
+                <h3 class="def-term">1. Google Firebase (Google Ireland Ltd / Google LLC)</h3>
+                <p class="def-desc"><strong>Zwecke:</strong> Backend, Authentifizierung (Firebase Auth), Realtime Database, Cloud Storage und Push-Nachrichten.<br><strong>Sitz:</strong> Dublin, Irland / Mountain View, USA.<br><strong>Datenschutzerklärung:</strong> <a href='https://firebase.google.com/support/privacy' target='_blank' rel='noopener noreferrer' class='link-styled link-external'>firebase.google.com/support/privacy &nearr;</a></p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">2. Google Maps SDK (Google Ireland Ltd / Google LLC)</h3>
+                <p class="def-desc"><strong>Zwecke:</strong> Interaktive Kartendarstellung und Anzeige von Veranstaltungsorten.<br><strong>Daten:</strong> GPS-Koordinaten und technische Verbindungsdaten.<br><strong>Datenschutzerklärung:</strong> <a href='https://policies.google.com/privacy' target='_blank' rel='noopener noreferrer' class='link-styled link-external'>policies.google.com/privacy &nearr;</a></p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">3. Google ML Kit Translate (Google LLC)</h3>
+                <p class="def-desc"><strong>Zwecke:</strong> Lokale, geräteinterne Übersetzung von Texten ohne Cloud-Upload.</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">4. Externe Navigations-Apps (via System-Intent)</h3>
+                <p class="def-desc"><strong>Zwecke:</strong> Beim Klick auf 'Route starten' werden Koordinaten an die gewählte Navigations-App (Google Maps, Waze, Apple Maps) übergeben.</p>
+              </div>
+            </div>
+
+            <div class="callout callout-tip" style="margin-top: 20px;">
+              <div class="callout-icon">✨</div>
+              <div class="callout-content">
+                STRIKTES VERBOT DES DATENVERKAUFS:<br>Es werden zu keinem Zeitpunkt personenbezogene Daten an Dritte für Werbe- oder Marketingzwecke verkauft, vermietet oder weitergegeben.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 9 -->
+        <!-- ========================================== -->
+        <article id="sec-9" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">09</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">9. Datenübermittlung in Drittländer außerhalb des EWR</h2>
+              <button class="copy-anchor-btn" data-target="sec-9" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Die von Rook genutzte Cloud-Infrastruktur befindet sich vorrangig innerhalb der Europäischen Union (EWR). Aufgrund globaler Dienste von Google LLC können jedoch Datenübertragungen in die USA nicht vollständig ausgeschlossen werden.</p>
+            <p>Solche Übermittlungen erfolgen im Einklang mit <strong>Kapitel V der DSGVO</strong> auf Grundlage von:</p>
+            <ul class="styled-list">
+              <li><strong>Angemessenheitsbeschluss der EU-Kommission:</strong> im Rahmen des <em>EU-U.S. Data Privacy Framework (EU-U.S. DPF)</em>, für das Google LLC zertifiziert ist;</li><li><strong>Standardvertragsklauseln (SCC):</strong> genehmigt von der Europäischen Kommission gemäß Art. 46 DSGVO, ergänzt durch technische Verschlüsselung.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 10 -->
+        <!-- ========================================== -->
+        <article id="sec-10" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">10</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">10. Rechte der betroffenen Person (Art. 15–22 DSGVO)</h2>
+              <button class="copy-anchor-btn" data-target="sec-10" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Ihnen stehen bezüglich Ihrer personenbezogenen Daten jederzeit folgende Rechte gemäß DSGVO zu:</p>
+
+            <div class="definitions-grid">
+              <div class="definition-card">
+                <h3 class="def-term">Auskunftsrecht (Art. 15)</h3>
+                <p class="def-desc">Bestätigung verlangen, ob Daten verarbeitet werden, und eine Kopie dieser Daten erhalten.</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">Recht auf Berichtigung (Art. 16)</h3>
+                <p class="def-desc">Unverzügliche Berichtigung unrichtiger oder Vervollständigung unvollständiger Daten verlangen.</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">Recht auf Löschung (Art. 17)</h3>
+                <p class="def-desc">Unverzügliche und dauerhafte Löschung Ihrer Daten aus Datenbanken und Backups verlangen.</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">Einschränkung der Verarbeitung (Art. 18)</h3>
+                <p class="def-desc">Vorübergehende Aussetzung der Datenverarbeitung unter gesetzlichen Voraussetzungen verlangen.</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">Recht auf Datenübertragbarkeit (Art. 20)</h3>
+                <p class="def-desc">Erhalt der Daten in einem strukturierten, gängigen und maschinenlesbaren Format (JSON).</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">Widerspruchsrecht (Art. 21)</h3>
+                <p class="def-desc">Aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit der Verarbeitung widersprechen.</p>
+              </div>
+              <div class="definition-card">
+                <h3 class="def-term">Widerruf der Einwilligung</h3>
+                <p class="def-desc">Einmal erteilte Einwilligungen (z. B. GPS oder Alerts) jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+              </div>
+            </div>
+
+            <!-- 10.1 Account Deletion -->
+            <div class="subsection" id="account-deletion" style="margin-top: 24px;">
+              <h3 class="subsection-title">10.1. Kontolöschung und Löschantrag (Google Play Konformität & Art. 17 DSGVO)</h3>
+              <div class="callout callout-gdpr">
+                <div class="callout-icon">⚡</div>
+                <div class="callout-content">
+                  <strong>Kontolöschung für die App Rook (Entwickler: TFDLab):</strong><br>
+                  Gemäß Google Play Richtlinien und Art. 17 DSGVO kann die vollständige Kontolöschung auf zwei Wegen veranlasst werden:
+                  <ul class="styled-list" style="margin-top: 10px;">
+                    <li><strong>Methode 1 — Direkt in der App (Empfohlen):</strong><br>1. Öffnen Sie die App <strong>Rook</strong> auf Ihrem Android-Gerät;<br>2. Wechseln Sie in den Bereich <strong>„Profil“</strong> in der Navigationsleiste;<br>3. Scrollen Sie nach unten und tippen Sie auf <strong>„Konto löschen“</strong>;<br>4. Bestätigen Sie den Vorgang im Dialogfenster für die sofortige Löschung.</li>
+                    <li style="margin-top: 8px;"><strong>Methode 2 — Antrag per E-Mail (Ohne Neuinstallation der App):</strong><br>Senden Sie eine E-Mail an <a href="mailto:tfdlab.info@gmail.com?subject=Rook%20Antrag%20Kontol%C3%B6schung" class="link-styled"><strong>tfdlab.info@gmail.com</strong></a> mit dem Betreff <em>„Rook Antrag Kontolöschung“</em> und Angabe Ihrer registrierten E-Mail-Adresse. Die dauerhafte Löschung erfolgt binnen 30 Tagen mit Bestätigung.</li>
+                  </ul>
+                  <div style="margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 0.875rem;">
+                    <strong>Gelöschte Daten:</strong> Firebase UID, E-Mail-Adresse, Profilname, Favoriten, gefolgte Veranstalter, gespeicherte Stichwörter, FCM-Token und Rezensionen.<br><strong>Aufbewahrungsfrist:</strong> Keine Daten werden zurückbehalten (weitere Speicherdauer: <strong>0 Tage</strong>). Die Löschung ist sofortig, vollständig und unwiderruflich.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10.2 Self management -->
+            <div class="subsection">
+              <h3 class="subsection-title">10.2. Eigenständige Verwaltung von Rezensionen und Benachrichtigungen</h3>
+              <p>Sie haben volle Kontrolle über Ihre Inhalte:<br>- <strong>Rezensionen:</strong> Direkt in der jeweiligen Event-Ansicht editier- oder löschbar;<br>- <strong>Benachrichtigungen:</strong> Jederzeit in den Profileinstellungen anpassbar.</p>
+            </div>
+
+            <!-- 10.3 Exercise via email -->
+            <div class="subsection">
+              <h3 class="subsection-title">10.3. Wahrnehmung der Rechte per E-Mail</h3>
+              <p>Wenden Sie sich zur Ausübung Ihrer Rechte an <a href='mailto:tfdlab.info@gmail.com' class='link-styled'>tfdlab.info@gmail.com</a>. Wir antworten unverzüglich, spätestens innerhalb von <strong>30 Tagen</strong>.</p>
+            </div>
+
+            <!-- 10.4 Complaint -->
+            <div class="subsection">
+              <h3 class="subsection-title">10.4. Beschwerderecht bei einer Aufsichtsbehörde</h3>
+              <div class="callout callout-info">
+                <div class="callout-icon">🏛️</div>
+                <div class="callout-content">
+                  Sie haben unbeschadet anderer Rechtsbehelfe das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde (in Italien: <strong>Garante per la protezione dei dati personali</strong>, Piazza Venezia 11, 00187 Rom, <a href='https://www.garanteprivacy.it' target='_blank' rel='noopener noreferrer' class='link-styled link-external'>www.garanteprivacy.it &nearr;</a> oder bei Ihrer nationalen Aufsichtsbehörde).
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 11 -->
+        <!-- ========================================== -->
+        <article id="sec-11" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">11</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">11. Schutz von Minderjährigen</h2>
+              <button class="copy-anchor-btn" data-target="sec-11" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Die App richtet sich nicht an Personen unter <strong>14 Jahren</strong>. Wir erheben wissentlich keine personenbezogenen Daten von Minderjährigen unterhalb des gesetzlichen Mindestalters für digitale Dienste.</p>
+            <div class="callout callout-warning">
+              <div class="callout-icon">🧒</div>
+              <div class="callout-content">
+                Hinweis für Erziehungsberechtigte:<br>Sollten Sie feststellen, dass ein Kind unter 14 Jahren ohne Zustimmung Daten bereitgestellt hat, informieren Sie uns bitte unter <a href='mailto:tfdlab.info@gmail.com' class='link-styled'>tfdlab.info@gmail.com</a> zur unverzüglichen Löschung.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 12 -->
+        <!-- ========================================== -->
+        <article id="sec-12" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">12</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">12. Automatisierte Entscheidungsfindung und Profiling</h2>
+              <button class="copy-anchor-btn" data-target="sec-12" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Wir setzen <strong>KEINE</strong> vollautomatisierten Entscheidungen oder kommerzielles Profiling ein, die rechtliche Wirkungen entfalten oder Nutzer erheblich beeinträchtigen (Art. 22 DSGVO).</p>
+            <div class="callout callout-info">
+              <div class="callout-icon">ℹ️</div>
+              <div class="callout-content">
+                Technische Sortierfilter:<br>Entfernungskalkulationen und Stichwort-Alerts arbeiten als rein technische Filter auf Basis der Nutzerauswahl ohne werbliche Vorhersagen.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 13 -->
+        <!-- ========================================== -->
+        <article id="sec-13" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">13</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">13. Aktualisierungen der Datenschutzerklärung</h2>
+              <button class="copy-anchor-btn" data-target="sec-13" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um geänderten gesetzlichen Vorgaben oder neuen App-Funktionen zu entsprechen.</p>
+            <p>Aktualisierte Versionen werden mit aktuellem Datum und Versionsnummer veröffentlicht. Wesentliche Änderungen werden in der App kenntlich gemacht.</p>
+          </div>
+        </article>
+
+        <!-- ========================================== -->
+        <!-- SECTION 14 -->
+        <!-- ========================================== -->
+        <article id="sec-14" class="legal-section">
+          <header class="section-header">
+            <span class="section-tag">14</span>
+            <div class="title-with-anchor">
+              <h2 class="section-title">14. Kontaktdaten des Verantwortlichen</h2>
+              <button class="copy-anchor-btn" data-target="sec-14" title="Copy section link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+              </button>
+            </div>
+          </header>
+
+          <div class="section-content">
+            <p>Bei Fragen oder zur Wahrnehmung Ihrer Rechte erreichen Sie uns über folgende Kanäle:</p>
+
+            <div class="contact-channels-grid">
+              <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h4>Datenschutz-Support</h4>
+                <p>Hauptkanal für Auskunfts- und Löschanträge.</p>
+                <a href='mailto:tfdlab.info@gmail.com' class='contact-action-link'>tfdlab.info@gmail.com</a>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <h4>Standort</h4>
+                <p>Anschrift für förmliche Mitteilungen.</p>
+                <address class='contact-address'>Cascina, Pisa, Italien</address>
+              </div>
+              <div class="contact-card">
+                <div class="contact-icon">📱</div>
+                <h4>Direkt in der App</h4>
+                <p>Eigenständige Kontolöschung und Präferenzen.</p>
+                <span class='contact-inapp'>Profil / Benachrichtigungen in Rook</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Document Closure -->
+        <div class="doc-closure">
+          <div class="closure-badge">Ende des Dokuments</div>
+          <p class="closure-text">
+            Diese Datenschutzerklärung spiegelt das kontinuierliche Engagement von Rook und TFDLab für einen transparenten, sicheren und DSGVO-konformen Umgang mit Ihren personenbezogenen Daten wider.
+          </p>
+          <div class="closure-actions">
+            <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="btn-secondary">
+              &uarr; Nach oben
+            </button>
+            <div class="closure-lang-group" aria-label="Language selector">
+              <span class="closure-lang-label">Sprache:</span>
+              <a href="index.html" class="closure-lang-btn" data-lang="it">🇮🇹 IT</a>
+              <a href="en.html" class="closure-lang-btn" data-lang="en">🇬🇧 EN</a>
+              <a href="#" class="closure-lang-btn active" data-lang="de">🇩🇪 DE</a>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="toast-toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span id="toastMessage">Abschnittslink in die Zwischenablage kopiert!</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top" title="Top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">Rook</span>
+        <p class="footer-desc">
+          Die App für Dorffeste (Sagre), traditionelle Feierlichkeiten und Kultur in der Toskana (<code>it.rookapp.eventi</code>).
+        </p>
+      </div>
+      <div class="footer-links">
+        <span class="footer-title">Datenschutz-Links</span>
+        <ul>
+          <li><a href="#sec-1">Verantwortlicher</a></li>
+          <li><a href="#sec-3">Erfasste Daten & GPS</a></li>
+          <li><a href="#sec-4">DSGVO-Rechtsgrundlagen</a></li>
+          <li><a href="#sec-10">Rechte & Kontolöschung</a></li>
+          <li><a href="#sec-14">Kontakt & Support</a></li>
+          <li><a href="/terms/de">Nutzungsbedingungen</a></li>
+        </ul>
+      </div>
+      <div class="footer-meta">
+        <span class="footer-title">Rechtliche Hinweise</span>
+        <p>&copy; 2026 Rook &bull; Entwickelt von TFDLab</p>
+        <p>Alle Rechte vorbehalten &bull; Cascina (PI), Italien</p>
+        <p class="footer-note">Mobile App für Android (Paket: <code>it.rookapp.eventi</code>).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/privacy/script.js"></script>
+</body>
+</html>
