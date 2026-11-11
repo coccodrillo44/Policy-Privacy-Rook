@@ -332,7 +332,21 @@ document.addEventListener('DOMContentLoaded', () => {
       if (targetHref && targetHref !== '#') {
         e.preventDefault();
         const currentHash = window.location.hash || '';
-        window.location.href = targetHref + currentHash;
+        const path = window.location.pathname;
+
+        // Gestione compatibile sia per Firebase (/privacy, /privacy/en, /privacy/de)
+        // sia per repository standalone / GitHub Pages (es. /Policy-Privacy-Rook/) o file://
+        if (path.includes('/Policy-Privacy-Rook') || path.includes('/Termini-e-Condizioni-Rook')) {
+          const match = path.match(/^(\/[^\/]+\/)/);
+          const basePath = match ? match[1] : '/';
+          const fileTarget = targetLang === 'it' ? 'index.html' : targetLang + '.html';
+          window.location.href = basePath + fileTarget + currentHash;
+        } else if (window.location.protocol === 'file:') {
+          const fileTarget = targetLang === 'it' ? 'index.html' : targetLang + '.html';
+          window.location.href = fileTarget + currentHash;
+        } else {
+          window.location.href = targetHref + currentHash;
+        }
       }
     });
   });
